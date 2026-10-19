@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wordly 3D: Offline 3D Word Search Game</title>
+<meta name="description" content="Find hidden words on rotating 3D objects in Wordly 3D. Explore 30 food-themed levels in English or French, with offline play, hints and stars.">
+<link rel="canonical" href="https://lucas-labasque.github.io/en.html">
+<link rel="alternate" hreflang="fr" href="https://lucas-labasque.github.io/">
+<link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/en.html">
+<meta name="theme-color" content="#E2603B">
+<meta property="og:site_name" content="Wordly 3D">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:image:alt" content="Wordly 3D icon">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wordly 3D: Offline 3D Word Search Game">
+<meta name="twitter:description" content="Find hidden words on rotating 3D objects in Wordly 3D. Explore 30 food-themed levels in English or French, with offline play, hints and stars.">
+<meta name="twitter:image" content="https://lucas-labasque.github.io/icone.png">
+<meta name="twitter:image:alt" content="Wordly 3D icon">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wordly 3D: Offline 3D Word Search Game">
+<meta property="og:description" content="Find hidden words on rotating 3D objects in Wordly 3D. Explore 30 food-themed levels in English or French, with offline play, hints and stars.">
+<meta property="og:image" content="https://lucas-labasque.github.io/icone.png">
+<meta property="og:url" content="https://lucas-labasque.github.io/en.html">
+<meta property="og:locale" content="en_US">
+<link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/">
+<link rel="icon" href="icone.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "@id": "https://lucas-labasque.github.io/#game",
+  "name": "Wordly 3D",
+  "description": "Find hidden words on rotating 3D objects in Wordly 3D. Explore 30 food-themed levels in English or French, with offline play, hints and stars.",
+  "url": "https://lucas-labasque.github.io/en.html",
+  "image": "https://lucas-labasque.github.io/icone.png",
+  "genre": [
+    "Word search",
+    "Word game",
+    "Puzzle"
+  ],
+  "gamePlatform": [
+    "iOS",
+    "Android"
+  ],
+  "inLanguage": [
+    "fr",
+    "en"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Lucas Labasque"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --fond: #FFF3E3; --carte: #FFFFFF; --texte: #3A2A22; --doux: #7A645A; --marque: #E2603B; --fonce: #B9472A; --trait: #F1DCCB; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 Nunito, system-ui, sans-serif; }
+  header { background: var(--marque); color: #FFF3E3; text-align: center; padding: 40px 16px 48px; }
+  header img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 8px 0 var(--fonce); }
+  h1, h2 { font-family: "Lilita One", Nunito, sans-serif; font-weight: 400; letter-spacing: .5px; }
+  h1 { font-size: 40px; margin: 18px 0 4px; }
+  header p { margin: 0; font-size: 19px; }
+  .langue { position: absolute; top: 12px; right: 16px; color: #FFF3E3; font-weight: 700; }
+  main { max-width: 760px; margin: -24px auto 0; padding: 0 16px 48px; }
+  section { background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; box-shadow: 0 4px 0 var(--trait); }
+  h2 { color: var(--fonce); font-size: 26px; margin: 0 0 8px; }
+  h3 { font-size: 18px; margin: 18px 0 2px; }
+  p, li { color: var(--texte); }
+  a { color: var(--fonce); font-weight: 700; }
+  .captures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .captures figure { margin: 0; }
+  .captures img { display: block; width: 100%; max-width: 260px; height: auto; border-radius: 14px; margin: 0 auto; }
+  .captures figcaption { margin-top: 10px; font-size: 15px; text-align: center; }
+  @media (max-width: 480px) { h1 { font-size: 30px; } .captures { gap: 12px; } section { padding: 20px 16px; } }
+  .contact { text-align: center; font-size: 20px; }
+  footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
+</style>
+</head>
+<body>
+<a class="langue" href="index.html" hreflang="fr">Français</a>
+<header>
+  <img src="icone.png" alt="Wordly 3D icon" width="112" height="112">
+  <h1>Wordly 3D, a 3D word search game</h1>
+  <p>Find hidden words in English or French, even offline</p>
+</header>
+<main>
+  <section>
+    <h2>Find hidden words on rotating 3D objects</h2>
+    <p>Spin a burger, a donut or a pizza in 3D and find the words hidden in its letters. Read the topic, pick a word, then tap its letters in order. Watch out for decoy letters! Find all the words to earn stars and unlock the next level.</p>
+    <p>Explore 30 food-themed levels, track your progress on a 3D map and use hints when you get stuck. The game is designed for iPhone and Android, with words and menus in English and French.</p>
+  </section>
+
+  <section aria-labelledby="captures-title">
+    <h2 id="captures-title">See the game on Android</h2>
+    <div class="captures">
+      <figure>
+        <img src="images/gameplay-en.jpg" alt="Apple level: letters on a 3D object, three words to complete, zoom controls and hint buttons." width="1080" height="1920" loading="lazy" decoding="async">
+        <figcaption>Rotate the apple and tap letters to build the words.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/map-en.jpg" alt="Food theme map: a path connects the levels, with the first level selected." width="1080" height="1920" loading="lazy" decoding="async">
+        <figcaption>Complete a level to move along the map.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <h3>How do I play?</h3>
+    <p>Drag your finger on the object to rotate it and use the vertical slider to zoom. Tap a word at the top of the screen, then tap its letters on the object in the right order. In level 1, an animated hand shows you the gestures.</p>
+    <h3>Can I play offline?</h3>
+    <p>Yes. Levels work without an internet connection and progress is saved on your device. Optional rewarded video ads require a connection and depend on availability.</p>
+    <h3>I'm stuck on a level</h3>
+    <p>Use a hint: it reveals a letter or a whole word in exchange for coins. You earn coins for every level you complete. If you run out of coins, the game gives you some.</p>
+    <h3>My progress is gone</h3>
+    <p>Your progress (levels, stars, coins, settings) is saved on your phone only. It is erased if you delete the game, and it doesn't move from one phone to another.</p>
+    <h3>How do I change the language?</h3>
+    <p>The game follows your phone's language: French if your phone is set to French, English otherwise. Change the language in your phone's settings, then restart the game.</p>
+    <h3>Turn off sound, music or vibrations</h3>
+    <p>Open <strong>Settings</strong> from the home screen or the map.</p>
+    <h3>Ads and privacy</h3>
+    <p>Google AdMob ads are shown between levels, and optional videos give coins. In Europe, you can review your consent choice with the <strong>Privacy</strong> button in Settings; on iPhone, ad tracking can also be changed in Settings > Privacy &amp; Security > Tracking. Details in the <a href="confidentialite.html#en">privacy policy</a>.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact us</h2>
+    <p>A bug, a question, an idea for a word or a level?<br>
+    Write to <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a><br>
+    Tell us your phone model and the level number: we answer within a few days.</p>
+  </section>
+</main>
+<footer>
+  Wordly 3D – © 2026 Lucas Labasque · <a href="confidentialite.html#en">Privacy policy</a>
+</footer>
+</body>
+</html>
