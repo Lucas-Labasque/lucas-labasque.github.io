@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lucas-labasque.github.io/sitemap.xml
