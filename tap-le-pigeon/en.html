@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tap le Pigeon: free reflex arcade game for iPhone and Android</title>
+<meta name="description" content="Tap le Pigeon: tap the pigeons as fast as you can, but spare the doves! A free, funny arcade game for iPhone and Android with combos, challenges and unlockable looks.">
+<link rel="canonical" href="https://lucas-labasque.github.io/tap-le-pigeon/en.html">
+<link rel="alternate" hreflang="fr" href="https://lucas-labasque.github.io/tap-le-pigeon/">
+<link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/tap-le-pigeon/en.html">
+<link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/tap-le-pigeon/">
+<link rel="icon" href="icone.png">
+<meta name="theme-color" content="#8ECDF5">
+<meta property="og:site_name" content="Tap le pigeon">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tap le Pigeon: free reflex arcade game for iPhone and Android">
+<meta property="og:description" content="Tap le Pigeon: tap the pigeons as fast as you can, but spare the doves! A free, funny arcade game for iPhone and Android with combos, challenges and unlockable looks.">
+<meta property="og:image" content="https://lucas-labasque.github.io/tap-le-pigeon/images/banniere.png">
+<meta property="og:url" content="https://lucas-labasque.github.io/tap-le-pigeon/en.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tap le Pigeon: free reflex arcade game for iPhone and Android">
+<meta name="twitter:description" content="Tap le Pigeon: tap the pigeons as fast as you can, but spare the doves! A free, funny arcade game for iPhone and Android with combos, challenges and unlockable looks.">
+<meta name="twitter:image" content="https://lucas-labasque.github.io/tap-le-pigeon/images/banniere.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "@id": "https://lucas-labasque.github.io/tap-le-pigeon/#game",
+  "name": "Tap le pigeon",
+  "description": "Tap le Pigeon: tap the pigeons as fast as you can, but spare the doves! A free, funny arcade game for iPhone and Android with combos, challenges and unlockable looks.",
+  "url": "https://lucas-labasque.github.io/tap-le-pigeon/",
+  "image": "https://lucas-labasque.github.io/tap-le-pigeon/icone.png",
+  "genre": [
+    "Arcade",
+    "Reflex",
+    "Casual"
+  ],
+  "gamePlatform": [
+    "iOS",
+    "Android"
+  ],
+  "inLanguage": [
+    "fr",
+    "en"
+  ],
+  "applicationCategory": "Game",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Lucas Labasque"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --fond: #DDF0FC; --carte: #FFFFFF; --texte: #1F2A44; --doux: #4A5875; --marque: #8ECDF5; --fonce: #1F2A44; --orange: #FF9F1C; --trait: #B8DDF5; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 Nunito, system-ui, sans-serif; }
+  header { position: relative; background: var(--marque); color: var(--fonce); text-align: center; padding: 40px 16px 56px; overflow: hidden; }
+  header::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 34px; background: #3F5A80; clip-path: polygon(0 100%,0 45%,9% 45%,9% 15%,21% 15%,21% 55%,38% 55%,38% 5%,52% 5%,52% 40%,70% 40%,70% 20%,86% 20%,86% 50%,100% 50%,100% 100%); }
+  header img.icone { width: 112px; height: 112px; border-radius: 26px; border: 4px solid var(--fonce); box-shadow: 0 6px 0 var(--fonce); }
+  h1, h2 { font-family: Fredoka, Nunito, sans-serif; font-weight: 600; }
+  h1 { font-size: 40px; margin: 18px 0 4px; line-height: 1.15; }
+  header p { margin: 0; font-size: 19px; }
+  .langue { position: absolute; top: 12px; right: 16px; z-index: 1; color: var(--fonce); font-weight: 700; }
+  main { max-width: 760px; margin: -24px auto 0; padding: 0 16px 48px; position: relative; }
+  section { background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; border: 3px solid var(--fonce); box-shadow: 0 5px 0 var(--fonce); }
+  h2 { color: var(--fonce); font-size: 26px; margin: 0 0 8px; }
+  h3 { font-size: 18px; margin: 18px 0 2px; }
+  a { color: #185FA5; font-weight: 700; }
+  .boutons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 22px; }
+  .bouton { display: inline-block; padding: 12px 22px; border-radius: 16px; border: 3px solid var(--fonce); border-bottom-width: 7px; background: var(--orange); color: var(--fonce); text-decoration: none; font-weight: 700; }
+  .bouton.blanc { background: #fff; }
+  .regle { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .regle figure { margin: 0; background: var(--fond); border-radius: 16px; padding: 14px; text-align: center; }
+  .regle img { width: 120px; height: 100px; }
+  .regle figcaption { font-weight: 700; }
+  .ok { color: #27500A; } .ko { color: #A32D2D; }
+  ul { padding-left: 22px; }
+  .contact { text-align: center; font-size: 20px; }
+  footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
+  @media (max-width: 480px) { h1 { font-size: 30px; } section { padding: 20px 16px; } }
+</style>
+</head>
+<body>
+<a class="langue" href="./" hreflang="fr">Français</a>
+<header>
+  <img class="icone" src="icone.png" alt="Tap le Pigeon icon" width="112" height="112">
+  <h1>Tap le Pigeon, the reflex game</h1>
+  <p>Tap the pigeons as fast as you can… but whatever you do, spare the doves!</p>
+  <div class="boutons">
+    <a class="bouton" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.taplepigeon">Get it on Google Play</a>
+    <span class="bouton blanc">Coming soon to the App Store</span>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>A fast and funny arcade game</h2>
+    <p>Pigeons fly across the screen: tap them before they escape past the edge. But careful, tap a dove and the game is over. Rounds last a few minutes and can be played with one hand, perfect for a quick break.</p>
+  </section>
+
+  <section aria-labelledby="rule-title">
+    <h2 id="rule-title">The rule in two pictures</h2>
+    <div class="regle">
+      <figure><img src="images/pigeon.svg" alt="A grey pigeon" width="120" height="100"><figcaption class="ok">Pigeon: tap it!</figcaption></figure>
+      <figure><img src="images/colombe.svg" alt="A white dove holding an olive branch" width="120" height="100"><figcaption class="ko">Dove: don't you dare!</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's inside</h2>
+    <ul>
+      <li><strong>Combos up to x5</strong> when you chain pigeons quickly</li>
+      <li><strong>The golden pigeon</strong>, rare and fast, worth 5 points</li>
+      <li><strong>The big pigeon</strong>, which takes 3 taps</li>
+      <li>Pigeons that <strong>zigzag</strong> or <strong>stop dead</strong></li>
+      <li><strong>Two modes</strong>, Easy (3 lives) and Hard (1 life), each with its own high score</li>
+      <li><strong>6 challenges</strong> and unlockable looks: sunglasses, cap, beret and baguette</li>
+      <li><strong>4 settings</strong>: the city, Paris, the beach and the city at night</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <h3>How do combos work?</h3>
+    <p>Tap pigeons less than a second apart: the 3rd in a row gives x2, the 6th x3, up to x5. Wait too long or let a pigeon escape and the combo resets.</p>
+    <h3>How do I unlock looks and settings?</h3>
+    <p>Every round adds your score to your points, and completed challenges give bonus points. Spend them with the palette button in the menu.</p>
+    <h3>My progress is gone</h3>
+    <p>High scores, points and unlocks are stored only on your phone. They are erased if you delete the game and don't move between phones.</p>
+    <h3>Ads and privacy</h3>
+    <p>There are never ads during a round: only an occasional ad between rounds, and an optional video to keep playing after a loss. In Europe, your consent is requested on first launch; on iPhone, ad tracking can also be managed in Settings > Privacy &amp; Security > Tracking. See the <a href="confidentialite.html#en">privacy policy</a>.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact us</h2>
+    <p>A bug, a question, a pigeon idea?<br>
+    Email <a href="mailto:labasquelucas@gmail.com?subject=Tap%20le%20Pigeon">labasquelucas@gmail.com</a><br>
+    Tell us your phone model: we reply within a few days.</p>
+  </section>
+</main>
+<footer>
+  Tap le Pigeon – © 2026 Lucas Labasque · <a href="confidentialite.html#en">Privacy policy</a> · <a href="../en.html">All my games</a>
+</footer>
+</body>
+</html>
