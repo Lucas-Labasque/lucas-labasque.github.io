@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poulet Cascadeur : jeu de lancer gratuit sur iPhone et Android</title>
+<meta name="description" content="Poulet Cascadeur : catapulte un poulet casse-cou le plus loin possible, rebondis sur les trampolines, allume le réacteur et améliore ta catapulte. Jeu de lancer gratuit sur iPhone et Android.">
+<link rel="canonical" href="https://lucas-labasque.github.io/poulet-cascadeur/">
+<link rel="alternate" hreflang="fr" href="https://lucas-labasque.github.io/poulet-cascadeur/">
+<link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/poulet-cascadeur/en.html">
+<link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/poulet-cascadeur/">
+<link rel="icon" href="icone.png">
+<meta name="theme-color" content="#8ECDF5">
+<meta property="og:site_name" content="Poulet Cascadeur">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Poulet Cascadeur : jeu de lancer gratuit sur iPhone et Android">
+<meta property="og:description" content="Poulet Cascadeur : catapulte un poulet casse-cou le plus loin possible, rebondis sur les trampolines, allume le réacteur et améliore ta catapulte. Jeu de lancer gratuit sur iPhone et Android.">
+<meta property="og:image" content="https://lucas-labasque.github.io/poulet-cascadeur/images/banniere.png">
+<meta property="og:url" content="https://lucas-labasque.github.io/poulet-cascadeur/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Poulet Cascadeur : jeu de lancer gratuit sur iPhone et Android">
+<meta name="twitter:description" content="Poulet Cascadeur : catapulte un poulet casse-cou le plus loin possible, rebondis sur les trampolines, allume le réacteur et améliore ta catapulte. Jeu de lancer gratuit sur iPhone et Android.">
+<meta name="twitter:image" content="https://lucas-labasque.github.io/poulet-cascadeur/images/banniere.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "@id": "https://lucas-labasque.github.io/poulet-cascadeur/#game",
+  "name": "Poulet Cascadeur",
+  "description": "Poulet Cascadeur : catapulte un poulet casse-cou le plus loin possible, rebondis sur les trampolines, allume le réacteur et améliore ta catapulte. Jeu de lancer gratuit sur iPhone et Android.",
+  "url": "https://lucas-labasque.github.io/poulet-cascadeur/",
+  "image": "https://lucas-labasque.github.io/poulet-cascadeur/icone.png",
+  "genre": [
+    "Action",
+    "Lancer",
+    "Casual"
+  ],
+  "gamePlatform": [
+    "iOS",
+    "Android"
+  ],
+  "inLanguage": [
+    "fr",
+    "en"
+  ],
+  "applicationCategory": "Game",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Lucas Labasque"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --fond: #DDF0FC; --carte: #FFFFFF; --texte: #1F2A44; --doux: #4A5875; --marque: #8ECDF5; --fonce: #1F2A44; --orange: #FF9F1C; --trait: #B8DDF5; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 Nunito, system-ui, sans-serif; }
+  header { position: relative; background: var(--marque); color: var(--fonce); text-align: center; padding: 40px 16px 56px; overflow: hidden; }
+  header::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 34px; background: #3F5A80; clip-path: polygon(0 100%,0 45%,9% 45%,9% 15%,21% 15%,21% 55%,38% 55%,38% 5%,52% 5%,52% 40%,70% 40%,70% 20%,86% 20%,86% 50%,100% 50%,100% 100%); }
+  header img.icone { width: 112px; height: 112px; border-radius: 26px; border: 4px solid var(--fonce); box-shadow: 0 6px 0 var(--fonce); }
+  h1, h2 { font-family: Fredoka, Nunito, sans-serif; font-weight: 600; }
+  h1 { font-size: 40px; margin: 18px 0 4px; line-height: 1.15; }
+  header p { margin: 0; font-size: 19px; }
+  .langue { position: absolute; top: 12px; right: 16px; z-index: 1; color: var(--fonce); font-weight: 700; }
+  main { max-width: 760px; margin: -24px auto 0; padding: 0 16px 48px; position: relative; }
+  section { background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; border: 3px solid var(--fonce); box-shadow: 0 5px 0 var(--fonce); }
+  h2 { color: var(--fonce); font-size: 26px; margin: 0 0 8px; }
+  h3 { font-size: 18px; margin: 18px 0 2px; }
+  a { color: #185FA5; font-weight: 700; }
+  .boutons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 22px; }
+  .bouton { display: inline-block; padding: 12px 22px; border-radius: 16px; border: 3px solid var(--fonce); border-bottom-width: 7px; background: var(--orange); color: var(--fonce); text-decoration: none; font-weight: 700; }
+  .bouton.blanc { background: #fff; }
+  .regle { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .regle figure { margin: 0; background: var(--fond); border-radius: 16px; padding: 14px; text-align: center; }
+  .regle img { width: 120px; height: 100px; }
+  .regle figcaption { font-weight: 700; }
+  .ok { color: #27500A; } .ko { color: #A32D2D; }
+  ul { padding-left: 22px; }
+  .contact { text-align: center; font-size: 20px; }
+  footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
+  @media (max-width: 480px) { h1 { font-size: 30px; } section { padding: 20px 16px; } }
+</style>
+</head>
+<body>
+<a class="langue" href="en.html" hreflang="en">English</a>
+<header>
+  <img class="icone" src="icone.png" alt="Icône de Poulet Cascadeur" width="112" height="112">
+  <h1>Poulet Cascadeur, le jeu de lancer</h1>
+  <p>Un poulet, un casque, une catapulte : envoie-le le plus loin possible !</p>
+  <div class="boutons">
+    <span class="bouton blanc">Bientôt sur Google Play</span>
+    <span class="bouton blanc">Bientôt sur l'App Store</span>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>Vise, lance, améliore, recommence</h2>
+    <p>Tape une fois pour fixer l'angle, une deuxième fois pour la puissance : PAF, le poulet décolle ! En vol, tape pour battre des ailes ou allumer ton réacteur, ramasse les pièces, puis dépense-les dans la boutique pour aller encore plus loin au lancer suivant. De la ferme au village, puis à la ville et jusqu'à l'autoroute.</p>
+  </section>
+
+  <section aria-labelledby="regle-titre">
+    <h2 id="regle-titre">Sur ton chemin</h2>
+    <div class="regle">
+      <figure><img src="images/trampoline.svg" alt="Un trampoline" width="120" height="100"><figcaption class="ok">Trampoline : gros rebond !</figcaption></figure>
+      <figure><img src="images/ballon.svg" alt="Un ballon rouge" width="120" height="100"><figcaption class="ok">Ballon : il te remonte !</figcaption></figure>
+      <figure><img src="images/oeuf.svg" alt="Un œuf doré" width="120" height="100"><figcaption class="ok">Œuf doré : 10 pièces</figcaption></figure>
+      <figure><img src="images/boue.svg" alt="Une flaque de boue" width="120" height="100"><figcaption class="ko">Boue : ça freine !</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ce qui t'attend</h2>
+    <ul>
+      <li><strong>Une visée en deux temps</strong> : l'angle puis la puissance, avec une zone <strong>PARFAIT</strong> qui donne un bonus de 20 %</li>
+      <li><strong>Des bonus</strong> : trampolines, bottes de foin, bouches d'égout à vapeur, tapis roulants et ballons</li>
+      <li><strong>Des freins</strong> : flaques de boue, mares, clôtures et filets</li>
+      <li><strong>6 améliorations</strong> à 5 niveaux : catapulte, boosts, réacteur dorsal, aérodynamisme (avec cape et parachute), rebond et aimant à pièces</li>
+      <li><strong>4 environnements</strong> : la ferme, le village, la ville et l'autoroute</li>
+      <li><strong>8 défis</strong> et <strong>5 looks</strong> : casque de moto, casque viking, lunettes d'aviateur, couronne et banane de rockeur</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Questions fréquentes</h2>
+    <h3>Comment gagner des pièces ?</h3>
+    <p>Chaque lancer rapporte les pièces ramassées en vol, plus une pièce tous les 10 mètres parcourus. Les œufs dorés valent 10 pièces et les défis réussis en rapportent en bonus.</p>
+    <h3>À quoi servent les boosts ?</h3>
+    <p>En vol, chaque tape utilise un boost : un battement d'ailes au début, puis une poussée du réacteur dorsal quand tu l'as acheté. Leur nombre augmente avec l'amélioration « Boosts ».</p>
+    <h3>Ma progression a disparu</h3>
+    <p>Le record, les pièces, les améliorations et les looks sont enregistrés uniquement dans ton téléphone. Ils sont effacés si tu supprimes le jeu et ne passent pas d'un téléphone à l'autre.</p>
+    <h3>Le jeu n'a pas de son</h3>
+    <p>Vérifie le bouton son en bas du menu, puis que ton téléphone n'est pas en mode silencieux.</p>
+    <h3>Publicités et vie privée</h3>
+    <p>Il n'y a jamais de publicité pendant un vol : seulement une publicité de temps en temps entre deux lancers, et des vidéos facultatives pour doubler tes pièces ou gagner des boosts. En Europe, ton consentement est demandé au premier lancement ; sur iPhone, le suivi publicitaire se règle aussi dans Réglages > Confidentialité et sécurité > Suivi. Détails dans la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Nous contacter</h2>
+    <p>Un bug, une question, une idée d'obstacle ?<br>
+    Écris à <a href="mailto:labasquelucas@gmail.com?subject=Poulet%20Cascadeur">labasquelucas@gmail.com</a><br>
+    Indique ton modèle de téléphone : on répond sous quelques jours.</p>
+  </section>
+</main>
+<footer>
+  Poulet Cascadeur – © 2026 Lucas Labasque · <a href="confidentialite.html">Politique de confidentialité</a> · <a href="../">Tous mes jeux</a>
+</footer>
+</body>
+</html>
