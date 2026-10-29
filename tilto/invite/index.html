@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Un ami t'invite sur TILTO</title>
+<meta name="description" content="Un ami t'invite sur TILTO, le quiz en duel 1 contre 1. Ouvre l'invitation dans l'app pour devenir amis.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://lucas-labasque.github.io/tilto/invite/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath d='m14 2-9 12h6l-1 8L20 9h-7l1-7Z' fill='%23D7F76B' transform='translate(5 1)'/%3E%3Cpath d='m14 2-9 12h6l-1 8L20 9h-7l1-7Z' fill='%236842E8' transform='translate(0 2) scale(1.05)'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#6842E8">
+<meta property="og:site_name" content="TILTO">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Un ami t'invite sur TILTO">
+<meta property="og:description" content="Le quiz en duel 1 contre 1 : 7 questions, 10 secondes chacune. Rejoins ton ami.">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --fond: #F7F6FB; --carte: #FFFFFF; --texte: #221B36; --doux: #6B6279; --marque: #6842E8; --citron: #D7F76B; --encre: #191A26; --trait: #E9E4F1; --lien: #6842E8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #14131E; --carte: #22202F; --texte: #F7F5FA; --doux: #AAA4BC; --trait: #393346; --lien: #B69AFF; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--fond); color: var(--texte); font: 17px/1.6 Manrope, system-ui, sans-serif; }
+  header { background: var(--marque); color: #fff; text-align: center; padding: 40px 16px 72px; }
+  header .logo { display: inline-flex; align-items: center; gap: 10px; }
+  header .logo svg { width: 64px; height: 64px; }
+  header .logo span { font-size: 48px; font-weight: 800; letter-spacing: -1px; }
+  header .slogan { display: inline-block; margin-top: 14px; background: var(--citron); color: var(--encre); border-radius: 999px; padding: 4px 14px; font-size: 15px; font-weight: 800; }
+  main { max-width: 480px; margin: -40px auto 0; padding: 0 16px 48px; }
+  .carte { background: var(--carte); border: 1px solid var(--trait); border-radius: 24px; padding: 28px 24px; text-align: center; }
+  h1 { font-size: 28px; line-height: 1.2; font-weight: 800; margin: 0 0 8px; }
+  p { margin: 8px 0; }
+  .doux { color: var(--doux); font-size: 15px; }
+  .bouton { display: block; width: 100%; margin-top: 20px; padding: 16px; border: 0; border-radius: 999px; background: var(--marque); color: #fff; font: 800 18px Manrope, system-ui, sans-serif; text-decoration: none; cursor: pointer; }
+  .bouton:focus-visible { outline: 3px solid var(--citron); outline-offset: 3px; }
+  .etapes { text-align: left; margin: 24px 0 0; padding-left: 22px; font-size: 15px; color: var(--doux); }
+  .etapes li { margin: 6px 0; }
+  .erreur { color: var(--texte); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo" role="img" aria-label="TILTO">
+    <svg viewBox="0 0 28 28" aria-hidden="true"><path d="m14 2-9 12h6l-1 8L20 9h-7l1-7Z" fill="#D7F76B" transform="translate(5 1)"/><path d="m14 2-9 12h6l-1 8L20 9h-7l1-7Z" fill="#FFFFFF" transform="translate(0 2) scale(1.05)"/></svg>
+    <span>tilto</span>
+  </div>
+  <br>
+  <span class="slogan">Le déclic fait la différence.</span>
+</header>
+<main>
+  <div class="carte" id="invitation" hidden>
+    <h1>Un ami t'invite sur TILTO</h1>
+    <p>Le quiz en duel 1 contre 1 : 7 questions, 10 secondes chacune. Ouvre l'invitation pour devenir amis.</p>
+    <a class="bouton" id="ouvrir" href="#">Ouvrir dans TILTO</a>
+    <ol class="etapes">
+      <li>Appuie sur « Ouvrir dans TILTO » : l'invitation s'affiche dans l'app.</li>
+      <li>Si rien ne se passe, TILTO n'est pas encore installé sur ce téléphone. L'app arrive bientôt sur l'App Store et Google Play : reviens sur ce lien dès qu'elle est disponible.</li>
+    </ol>
+    <p class="doux">You've been invited to TILTO, the 1-vs-1 quiz duel. Tap the button to open the invitation in the app.</p>
+  </div>
+  <div class="carte erreur" id="invalide" hidden>
+    <h1>Invitation introuvable</h1>
+    <p>Ce lien d'invitation est incomplet ou n'est plus valable. Demande à ton ami de t'en envoyer un nouveau depuis TILTO.</p>
+  </div>
+</main>
+<script>
+  // Le code vient de ?c=<code> (lien partagé par l'app) ou du dernier segment du chemin, et suit le même format que dans l'app.
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var segments = location.pathname.split('/').filter(Boolean);
+    var code = (params.get('c') || (segments[segments.length - 1] !== 'invite' ? segments[segments.length - 1] : '') || '').toLowerCase();
+    var valide = /^[a-z0-9]{6,32}$/.test(code);
+    document.getElementById(valide ? 'invitation' : 'invalide').hidden = false;
+    if (valide) document.getElementById('ouvrir').href = 'tilto://invite/' + code;
+  })();
+</script>
+</body>
+</html>
