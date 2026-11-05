@@ -8,6 +8,8 @@
 <link rel="canonical" href="https://lucas-labasque.github.io/rappel-menage/en.html">
 <link rel="alternate" hreflang="fr" href="https://lucas-labasque.github.io/rappel-menage/">
 <link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/rappel-menage/en.html">
+<link rel="alternate" hreflang="de" href="https://lucas-labasque.github.io/rappel-menage/de.html">
+<link rel="alternate" hreflang="it" href="https://lucas-labasque.github.io/rappel-menage/it.html">
 <link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/rappel-menage/">
 <link rel="icon" href="icone.png">
 <meta name="theme-color" content="#2E2A6E">
@@ -33,7 +35,7 @@
   "image": "https://lucas-labasque.github.io/rappel-menage/icone.png",
   "applicationCategory": "LifestyleApplication",
   "operatingSystem": "iOS",
-  "inLanguage": "fr",
+  "inLanguage": ["fr", "en", "de", "it"],
   "author": {
     "@type": "Person",
     "name": "Lucas Labasque"
@@ -54,6 +56,7 @@
   h1 { position: relative; font-size: 40px; margin: 18px 0 4px; line-height: 1.15; }
   header p { position: relative; margin: 0; font-size: 19px; }
   .langue { position: absolute; top: 12px; right: 16px; z-index: 1; color: #fff; font-weight: 700; }
+  .langue a { color: #fff; }
   main { max-width: 760px; margin: -32px auto 0; padding: 0 16px 48px; position: relative; }
   section { background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; border: 1px solid var(--trait); }
   h2 { color: var(--sauge); font-size: 26px; line-height: 1.2; margin: 0 0 8px; }
@@ -78,7 +81,7 @@
 </style>
 </head>
 <body>
-<a class="langue" href="./" hreflang="fr">Français</a>
+<nav class="langue" aria-label="Language"><a href="./" hreflang="fr" lang="fr">FR</a> · <span aria-current="true">EN</span> · <a href="de.html" hreflang="de" lang="de">DE</a> · <a href="it.html" hreflang="it" lang="it">IT</a></nav>
 <header>
   <img class="icone" src="icone.png" alt="Rappel Ménage icon" width="112" height="112">
   <h1>Rappel Ménage</h1>
@@ -90,7 +93,7 @@
 <main>
   <section>
     <h2>Chores, room by room</h2>
-    <p>Plan the chores of each room, share them with your household and get a reminder at the right time. Chore done? Mark it with one tap and the next due date is worked out for you. The app itself is in French.</p>
+    <p>Plan the chores of each room, share them with your household and get a reminder at the right time. Chore done? Mark it with one tap and the next due date is worked out for you.</p>
   </section>
 
   <section aria-labelledby="captures-titre">
@@ -117,15 +120,15 @@
   <section id="support">
     <h2>Frequently asked questions</h2>
     <h3>Do I need an account?</h3>
-    <p>No. Choose "Utiliser sans compte, sur cet appareil" and your chores stay on your phone. An Apple or Google account is needed to share a household and find your data on another device.</p>
+    <p>No. Choose "Use without an account, on this device" and your chores stay on your phone. An Apple or Google account is needed to share a household and find your data on another device.</p>
     <h3>How do I join a household?</h3>
-    <p>Sign in, open the Foyers tab, tap "Rejoindre avec un code" and enter the invitation code you received.</p>
+    <p>Sign in, open the Households tab, tap "Join with a code" and enter the invitation code you received.</p>
     <h3>I don't get reminders</h3>
-    <p>Check that notifications are on in the app's Réglages tab, then in your phone settings. Vacation mode also pauses reminders.</p>
+    <p>Check that notifications are on in the app's Settings tab, then in your phone settings. Vacation mode also pauses reminders.</p>
     <h3>I can't sign in</h3>
     <p>Check your internet connection and try again. If it keeps happening, email us and tell us which service you used (Apple or Google).</p>
     <h3>How do I delete my account?</h3>
-    <p>In the Profil tab, tap "Supprimer mon compte". You can also request it by email. See the <a href="confidentialite.html#en">privacy policy</a> for details.</p>
+    <p>In the Profile tab, tap "Delete my account". You can also request it by email. See the <a href="confidentialite.html#en">privacy policy</a> for details.</p>
   </section>
 
   <section class="contact">
