@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rappel Ménage: household chores, without thinking about them</title>
+<meta name="description" content="Rappel Ménage: plan the chores of each room, share them with your household and get a reminder at the right time. App page and support.">
+<link rel="canonical" href="https://lucas-labasque.github.io/rappel-menage/en.html">
+<link rel="alternate" hreflang="fr" href="https://lucas-labasque.github.io/rappel-menage/">
+<link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/rappel-menage/en.html">
+<link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/rappel-menage/">
+<link rel="icon" href="icone.png">
+<meta name="theme-color" content="#2E2A6E">
+<meta property="og:site_name" content="Rappel Ménage">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rappel Ménage: household chores, without thinking about them">
+<meta property="og:description" content="Rappel Ménage: plan the chores of each room, share them with your household and get a reminder at the right time. App page and support.">
+<meta property="og:image" content="https://lucas-labasque.github.io/rappel-menage/images/banniere.png">
+<meta property="og:url" content="https://lucas-labasque.github.io/rappel-menage/en.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rappel Ménage: household chores, without thinking about them">
+<meta name="twitter:description" content="Rappel Ménage: plan the chores of each room, share them with your household and get a reminder at the right time. App page and support.">
+<meta name="twitter:image" content="https://lucas-labasque.github.io/rappel-menage/images/banniere.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "@id": "https://lucas-labasque.github.io/rappel-menage/#app",
+  "name": "Rappel Ménage",
+  "description": "Rappel Ménage: plan the chores of each room, share them with your household and get a reminder at the right time. App page and support.",
+  "url": "https://lucas-labasque.github.io/rappel-menage/en.html",
+  "image": "https://lucas-labasque.github.io/rappel-menage/icone.png",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS",
+  "inLanguage": "fr",
+  "author": {
+    "@type": "Person",
+    "name": "Lucas Labasque"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --fond: #F5EFE4; --carte: #FFFDF8; --texte: #23302A; --doux: #5F6A62; --marque: #2E2A6E; --violet: #534AB7; --sauge: #3F5B49; --trait: #E4DCCB; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 "DM Sans", system-ui, sans-serif; }
+  header { position: relative; background: var(--marque); color: #fff; text-align: center; padding: 40px 16px 64px; overflow: hidden; }
+  header::before { content: ""; position: absolute; top: -90px; right: -70px; width: 260px; height: 260px; border-radius: 50%; background: var(--violet); opacity: .35; }
+  header img.icone { position: relative; width: 112px; height: 112px; border-radius: 26px; }
+  h1, h2 { font-family: "Bricolage Grotesque", "DM Sans", sans-serif; font-weight: 700; }
+  h1 { position: relative; font-size: 40px; margin: 18px 0 4px; line-height: 1.15; }
+  header p { position: relative; margin: 0; font-size: 19px; }
+  .langue { position: absolute; top: 12px; right: 16px; z-index: 1; color: #fff; font-weight: 700; }
+  main { max-width: 760px; margin: -32px auto 0; padding: 0 16px 48px; position: relative; }
+  section { background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; border: 1px solid var(--trait); }
+  h2 { color: var(--sauge); font-size: 26px; line-height: 1.2; margin: 0 0 8px; }
+  h3 { font-size: 18px; margin: 18px 0 2px; }
+  p { margin: 0 0 10px; }
+  a { color: var(--sauge); font-weight: 700; }
+  .boutons { position: relative; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 22px; }
+  .bouton { display: inline-block; padding: 10px 20px; border-radius: 14px; background: #fff; color: var(--marque); font-weight: 700; }
+  .captures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .captures figure { margin: 0; }
+  .captures img { display: block; width: 100%; height: auto; border-radius: 12px; }
+  ul { padding-left: 22px; margin: 6px 0 10px; }
+  li { margin: 4px 0; }
+  .contact { text-align: center; font-size: 19px; }
+  .note { color: var(--doux); font-size: 15px; }
+  .tableau { overflow-x: auto; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--trait); }
+  th { color: var(--doux); }
+  footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
+  @media (max-width: 480px) { h1 { font-size: 30px; } section { padding: 20px 16px; } .captures { gap: 8px; } }
+</style>
+</head>
+<body>
+<a class="langue" href="./" hreflang="fr">Français</a>
+<header>
+  <img class="icone" src="icone.png" alt="Rappel Ménage icon" width="112" height="112">
+  <h1>Rappel Ménage</h1>
+  <p>Household chores, without thinking about them</p>
+  <div class="boutons">
+    <span class="bouton">Coming soon to the App Store</span>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>Chores, room by room</h2>
+    <p>Plan the chores of each room, share them with your household and get a reminder at the right time. Chore done? Mark it with one tap and the next due date is worked out for you. The app itself is in French.</p>
+  </section>
+
+  <section aria-labelledby="captures-titre">
+    <h2 id="captures-titre">A look at the app</h2>
+    <div class="captures">
+      <figure><img src="images/taches.jpg" alt="Calendar of today's chores" width="506" height="1100" loading="lazy"></figure>
+      <figure><img src="images/detail.jpg" alt="Chore details, with buttons to complete or postpone it" width="506" height="1100" loading="lazy"></figure>
+      <figure><img src="images/foyers.jpg" alt="List of households and their members" width="506" height="1100" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>What you get</h2>
+    <ul>
+      <li><strong>Chores by room</strong>, with their frequency and next due date</li>
+      <li><strong>Three views</strong>: rooms, list and calendar</li>
+      <li><strong>A shared household</strong>: invite people with a code and assign chores</li>
+      <li><strong>Reminders</strong> at the time you choose</li>
+      <li><strong>A vacation mode</strong> that pauses reminders and postpones chores</li>
+      <li><strong>No ads</strong>, and usable without an account on your device</li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <h2>Frequently asked questions</h2>
+    <h3>Do I need an account?</h3>
+    <p>No. Choose "Utiliser sans compte, sur cet appareil" and your chores stay on your phone. An Apple or Google account is needed to share a household and find your data on another device.</p>
+    <h3>How do I join a household?</h3>
+    <p>Sign in, open the Foyers tab, tap "Rejoindre avec un code" and enter the invitation code you received.</p>
+    <h3>I don't get reminders</h3>
+    <p>Check that notifications are on in the app's Réglages tab, then in your phone settings. Vacation mode also pauses reminders.</p>
+    <h3>I can't sign in</h3>
+    <p>Check your internet connection and try again. If it keeps happening, email us and tell us which service you used (Apple or Google).</p>
+    <h3>How do I delete my account?</h3>
+    <p>In the Profil tab, tap "Supprimer mon compte". You can also request it by email. See the <a href="confidentialite.html#en">privacy policy</a> for details.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact us</h2>
+    <p>A bug, a question, an idea?<br>
+    Email <a href="mailto:labasquelucas@gmail.com?subject=Rappel%20M%C3%A9nage">labasquelucas@gmail.com</a><br>
+    Tell us your phone model: we reply within a few days.</p>
+  </section>
+</main>
+<footer>
+  Rappel Ménage – © 2026 Lucas Labasque · <a href="confidentialite.html#en">Privacy policy</a> · <a href="../en.html">All my apps</a>
+</footer>
+</body>
+</html>
