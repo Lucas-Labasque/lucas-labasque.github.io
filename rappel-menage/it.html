@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rappel Ménage: le faccende di casa, senza pensarci</title>
+<meta name="description" content="Rappel Ménage: pianifica le attività di ogni stanza, dividetele in casa e ricevi un promemoria al momento giusto. Pagina dell’app e assistenza.">
+<link rel="canonical" href="https://lucas-labasque.github.io/rappel-menage/it.html">
+<link rel="alternate" hreflang="fr" href="https://lucas-labasque.github.io/rappel-menage/">
+<link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/rappel-menage/en.html">
+<link rel="alternate" hreflang="de" href="https://lucas-labasque.github.io/rappel-menage/de.html">
+<link rel="alternate" hreflang="it" href="https://lucas-labasque.github.io/rappel-menage/it.html">
+<link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/rappel-menage/">
+<link rel="icon" href="icone.png">
+<meta name="theme-color" content="#2E2A6E">
+<meta property="og:site_name" content="Rappel Ménage">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rappel Ménage: le faccende di casa, senza pensarci">
+<meta property="og:description" content="Rappel Ménage: pianifica le attività di ogni stanza, dividetele in casa e ricevi un promemoria al momento giusto. Pagina dell’app e assistenza.">
+<meta property="og:image" content="https://lucas-labasque.github.io/rappel-menage/images/banniere.png">
+<meta property="og:url" content="https://lucas-labasque.github.io/rappel-menage/it.html">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rappel Ménage: le faccende di casa, senza pensarci">
+<meta name="twitter:description" content="Rappel Ménage: pianifica le attività di ogni stanza, dividetele in casa e ricevi un promemoria al momento giusto. Pagina dell’app e assistenza.">
+<meta name="twitter:image" content="https://lucas-labasque.github.io/rappel-menage/images/banniere.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "@id": "https://lucas-labasque.github.io/rappel-menage/#app",
+  "name": "Rappel Ménage",
+  "description": "Rappel Ménage: pianifica le attività di ogni stanza, dividetele in casa e ricevi un promemoria al momento giusto. Pagina dell’app e assistenza.",
+  "url": "https://lucas-labasque.github.io/rappel-menage/it.html",
+  "image": "https://lucas-labasque.github.io/rappel-menage/icone.png",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS",
+  "inLanguage": ["fr", "en", "de", "it"],
+  "author": {
+    "@type": "Person",
+    "name": "Lucas Labasque"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --fond: #F5EFE4; --carte: #FFFDF8; --texte: #23302A; --doux: #5F6A62; --marque: #2E2A6E; --violet: #534AB7; --sauge: #3F5B49; --trait: #E4DCCB; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 "DM Sans", system-ui, sans-serif; }
+  header { position: relative; background: var(--marque); color: #fff; text-align: center; padding: 40px 16px 64px; overflow: hidden; }
+  header::before { content: ""; position: absolute; top: -90px; right: -70px; width: 260px; height: 260px; border-radius: 50%; background: var(--violet); opacity: .35; }
+  header img.icone { position: relative; width: 112px; height: 112px; border-radius: 26px; }
+  h1, h2 { font-family: "Bricolage Grotesque", "DM Sans", sans-serif; font-weight: 700; }
+  h1 { position: relative; font-size: 40px; margin: 18px 0 4px; line-height: 1.15; }
+  header p { position: relative; margin: 0; font-size: 19px; }
+  .langue { position: absolute; top: 12px; right: 16px; z-index: 1; color: #fff; font-weight: 700; }
+  .langue a { color: #fff; }
+  main { max-width: 760px; margin: -32px auto 0; padding: 0 16px 48px; position: relative; }
+  section { background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; border: 1px solid var(--trait); }
+  h2 { color: var(--sauge); font-size: 26px; line-height: 1.2; margin: 0 0 8px; }
+  h3 { font-size: 18px; margin: 18px 0 2px; }
+  p { margin: 0 0 10px; }
+  a { color: var(--sauge); font-weight: 700; }
+  .boutons { position: relative; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 22px; }
+  .bouton { display: inline-block; padding: 10px 20px; border-radius: 14px; background: #fff; color: var(--marque); font-weight: 700; }
+  .captures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .captures figure { margin: 0; }
+  .captures img { display: block; width: 100%; height: auto; border-radius: 12px; }
+  ul { padding-left: 22px; margin: 6px 0 10px; }
+  li { margin: 4px 0; }
+  .contact { text-align: center; font-size: 19px; }
+  .note { color: var(--doux); font-size: 15px; }
+  .tableau { overflow-x: auto; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--trait); }
+  th { color: var(--doux); }
+  footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
+  @media (max-width: 480px) { h1 { font-size: 30px; } section { padding: 20px 16px; } .captures { gap: 8px; } }
+</style>
+</head>
+<body>
+<nav class="langue" aria-label="Lingua"><a href="./" hreflang="fr" lang="fr">FR</a> · <a href="en.html" hreflang="en" lang="en">EN</a> · <a href="de.html" hreflang="de" lang="de">DE</a> · <span aria-current="true">IT</span></nav>
+<header>
+  <img class="icone" src="icone.png" alt="Icona di Rappel Ménage" width="112" height="112">
+  <h1>Rappel Ménage</h1>
+  <p>Le faccende di casa, senza pensarci</p>
+  <div class="boutons">
+    <span class="bouton">Presto su App Store</span>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>Le faccende, stanza per stanza</h2>
+    <p>Pianifica le attività di ogni stanza, dividetele in casa e ricevi un promemoria al momento giusto. Attività fatta? Segnala con un tocco: la scadenza successiva si calcola da sola.</p>
+  </section>
+
+  <section aria-labelledby="captures-titre">
+    <h2 id="captures-titre">Uno sguardo all’app</h2>
+    <div class="captures">
+      <figure><img src="images/taches.jpg" alt="Calendario delle attività di oggi" width="506" height="1100" loading="lazy"></figure>
+      <figure><img src="images/detail.jpg" alt="Dettagli di un’attività, con i pulsanti per completarla o rimandarla" width="506" height="1100" loading="lazy"></figure>
+      <figure><img src="images/foyers.jpg" alt="Elenco delle case e dei loro membri" width="506" height="1100" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cosa ti aspetta</h2>
+    <ul>
+      <li><strong>Attività per stanza</strong>, con frequenza e prossima scadenza</li>
+      <li><strong>Tre viste</strong>: stanze, elenco e calendario</li>
+      <li><strong>Una casa condivisa</strong>: invita altre persone con un codice e assegna le attività</li>
+      <li><strong>Promemoria</strong> all’ora che preferisci</li>
+      <li><strong>Una modalità vacanza</strong> che mette in pausa i promemoria e rimanda le attività</li>
+      <li><strong>Senza pubblicità</strong>, e utilizzabile senza account sul tuo dispositivo</li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <h2>Domande frequenti</h2>
+    <h3>Serve un account?</h3>
+    <p>No. Scegli «Usa senza account, su questo dispositivo»: le tue attività restano sul telefono. Un account Apple o Google serve per condividere una casa e ritrovare i tuoi dati su un altro dispositivo.</p>
+    <h3>Come mi unisco a una casa?</h3>
+    <p>Accedi, apri la scheda «Case», tocca «Unisciti con un codice» e inserisci il codice di invito ricevuto.</p>
+    <h3>Non ricevo i promemoria</h3>
+    <p>Controlla che le notifiche siano attive nella scheda «Impostazioni» dell’app, poi nelle impostazioni del telefono. Anche la modalità vacanza mette in pausa i promemoria.</p>
+    <h3>Non riesco ad accedere</h3>
+    <p>Controlla la connessione a internet e riprova. Se il problema continua, scrivici indicando il servizio usato (Apple o Google).</p>
+    <h3>Come elimino il mio account?</h3>
+    <p>Nella scheda «Profilo», tocca «Elimina il mio account». Puoi anche richiederlo via e-mail. I dettagli sono nell’<a href="confidentialite.html#it">informativa sulla privacy</a>.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contattaci</h2>
+    <p>Un bug, una domanda, un’idea?<br>
+    Scrivi a <a href="mailto:labasquelucas@gmail.com?subject=Rappel%20M%C3%A9nage">labasquelucas@gmail.com</a><br>
+    Indica il modello del tuo telefono: rispondiamo entro pochi giorni.</p>
+  </section>
+</main>
+<footer>
+  Rappel Ménage – © 2026 Lucas Labasque · <a href="confidentialite.html#it">Informativa sulla privacy</a> · <a href="../en.html">Tutte le mie app</a>
+</footer>
+</body>
+</html>
