@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rappel Ménage : les tâches de la maison, sans y penser</title>
+<meta name="description" content="Rappel Ménage : planifie les tâches de chaque pièce, répartis-les dans ton foyer et reçois un rappel au bon moment. Page de l'application et assistance.">
+<link rel="canonical" href="https://lucas-labasque.github.io/rappel-menage/">
+<link rel="alternate" hreflang="fr" href="https://lucas-labasque.github.io/rappel-menage/">
+<link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/rappel-menage/en.html">
+<link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/rappel-menage/">
+<link rel="icon" href="icone.png">
+<meta name="theme-color" content="#2E2A6E">
+<meta property="og:site_name" content="Rappel Ménage">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rappel Ménage : les tâches de la maison, sans y penser">
+<meta property="og:description" content="Rappel Ménage : planifie les tâches de chaque pièce, répartis-les dans ton foyer et reçois un rappel au bon moment. Page de l'application et assistance.">
+<meta property="og:image" content="https://lucas-labasque.github.io/rappel-menage/images/banniere.png">
+<meta property="og:url" content="https://lucas-labasque.github.io/rappel-menage/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rappel Ménage : les tâches de la maison, sans y penser">
+<meta name="twitter:description" content="Rappel Ménage : planifie les tâches de chaque pièce, répartis-les dans ton foyer et reçois un rappel au bon moment. Page de l'application et assistance.">
+<meta name="twitter:image" content="https://lucas-labasque.github.io/rappel-menage/images/banniere.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "@id": "https://lucas-labasque.github.io/rappel-menage/#app",
+  "name": "Rappel Ménage",
+  "description": "Rappel Ménage : planifie les tâches de chaque pièce, répartis-les dans ton foyer et reçois un rappel au bon moment. Page de l'application et assistance.",
+  "url": "https://lucas-labasque.github.io/rappel-menage/",
+  "image": "https://lucas-labasque.github.io/rappel-menage/icone.png",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS",
+  "inLanguage": "fr",
+  "author": {
+    "@type": "Person",
+    "name": "Lucas Labasque"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --fond: #F5EFE4; --carte: #FFFDF8; --texte: #23302A; --doux: #5F6A62; --marque: #2E2A6E; --violet: #534AB7; --sauge: #3F5B49; --trait: #E4DCCB; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 "DM Sans", system-ui, sans-serif; }
+  header { position: relative; background: var(--marque); color: #fff; text-align: center; padding: 40px 16px 64px; overflow: hidden; }
+  header::before { content: ""; position: absolute; top: -90px; right: -70px; width: 260px; height: 260px; border-radius: 50%; background: var(--violet); opacity: .35; }
+  header img.icone { position: relative; width: 112px; height: 112px; border-radius: 26px; }
+  h1, h2 { font-family: "Bricolage Grotesque", "DM Sans", sans-serif; font-weight: 700; }
+  h1 { position: relative; font-size: 40px; margin: 18px 0 4px; line-height: 1.15; }
+  header p { position: relative; margin: 0; font-size: 19px; }
+  .langue { position: absolute; top: 12px; right: 16px; z-index: 1; color: #fff; font-weight: 700; }
+  main { max-width: 760px; margin: -32px auto 0; padding: 0 16px 48px; position: relative; }
+  section { background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; border: 1px solid var(--trait); }
+  h2 { color: var(--sauge); font-size: 26px; line-height: 1.2; margin: 0 0 8px; }
+  h3 { font-size: 18px; margin: 18px 0 2px; }
+  p { margin: 0 0 10px; }
+  a { color: var(--sauge); font-weight: 700; }
+  .boutons { position: relative; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 22px; }
+  .bouton { display: inline-block; padding: 10px 20px; border-radius: 14px; background: #fff; color: var(--marque); font-weight: 700; }
+  .captures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .captures figure { margin: 0; }
+  .captures img { display: block; width: 100%; height: auto; border-radius: 12px; }
+  ul { padding-left: 22px; margin: 6px 0 10px; }
+  li { margin: 4px 0; }
+  .contact { text-align: center; font-size: 19px; }
+  .note { color: var(--doux); font-size: 15px; }
+  .tableau { overflow-x: auto; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--trait); }
+  th { color: var(--doux); }
+  footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
+  @media (max-width: 480px) { h1 { font-size: 30px; } section { padding: 20px 16px; } .captures { gap: 8px; } }
+</style>
+</head>
+<body>
+<a class="langue" href="en.html" hreflang="en">English</a>
+<header>
+  <img class="icone" src="icone.png" alt="Icône de Rappel Ménage" width="112" height="112">
+  <h1>Rappel Ménage</h1>
+  <p>Les tâches de la maison, sans y penser</p>
+  <div class="boutons">
+    <span class="bouton">Bientôt sur l'App Store</span>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>Le ménage, pièce par pièce</h2>
+    <p>Planifie les tâches de chaque pièce, répartis-les entre les membres de ton foyer et reçois un rappel au bon moment. Une tâche est faite ? Marque-la en un geste : la prochaine échéance se calcule toute seule.</p>
+  </section>
+
+  <section aria-labelledby="captures-titre">
+    <h2 id="captures-titre">Aperçu de l'application</h2>
+    <div class="captures">
+      <figure><img src="images/taches.jpg" alt="Calendrier des tâches du jour" width="506" height="1100" loading="lazy"></figure>
+      <figure><img src="images/detail.jpg" alt="Détail d'une tâche, avec les boutons pour la terminer ou la reporter" width="506" height="1100" loading="lazy"></figure>
+      <figure><img src="images/foyers.jpg" alt="Liste des foyers et de leurs membres" width="506" height="1100" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ce qui t'attend</h2>
+    <ul>
+      <li><strong>Des tâches par pièce</strong>, avec leur fréquence et leur prochaine échéance</li>
+      <li><strong>Trois vues</strong> : pièces, liste et calendrier</li>
+      <li><strong>Un foyer partagé</strong> : invite d'autres personnes avec un code et attribue les tâches</li>
+      <li><strong>Des rappels</strong> à l'heure que tu choisis</li>
+      <li><strong>Un mode vacances</strong> qui met les rappels en pause et reporte les tâches</li>
+      <li><strong>Sans publicité</strong>, et utilisable sans compte sur ton appareil</li>
+    </ul>
+  </section>
+
+  <section id="assistance">
+    <h2>Questions fréquentes</h2>
+    <h3>Faut-il créer un compte ?</h3>
+    <p>Non. Choisis « Utiliser sans compte, sur cet appareil » : tes tâches restent sur ton téléphone. Un compte Apple ou Google est nécessaire pour partager un foyer et retrouver tes données sur un autre appareil.</p>
+    <h3>Comment rejoindre un foyer ?</h3>
+    <p>Connecte-toi, ouvre l'onglet Foyers, touche « Rejoindre avec un code » et saisis le code d'invitation reçu.</p>
+    <h3>Je ne reçois pas les rappels</h3>
+    <p>Vérifie que les notifications sont activées dans l'onglet Réglages de l'app, puis dans les réglages de ton téléphone. Le mode vacances met aussi les rappels en pause.</p>
+    <h3>La connexion ne fonctionne pas</h3>
+    <p>Vérifie ta connexion internet, puis réessaie. Si le problème continue, écris-nous en indiquant le service utilisé (Apple ou Google).</p>
+    <h3>Comment supprimer mon compte ?</h3>
+    <p>Dans l'onglet Profil, touche « Supprimer mon compte ». Tu peux aussi en faire la demande par e-mail. Le détail se trouve dans la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Nous contacter</h2>
+    <p>Un bug, une question, une idée ?<br>
+    Écris à <a href="mailto:labasquelucas@gmail.com?subject=Rappel%20M%C3%A9nage">labasquelucas@gmail.com</a><br>
+    Indique ton modèle de téléphone : on répond sous quelques jours.</p>
+  </section>
+</main>
+<footer>
+  Rappel Ménage – © 2026 Lucas Labasque · <a href="confidentialite.html">Politique de confidentialité</a> · <a href="../">Toutes mes applis</a>
+</footer>
+</body>
+</html>
