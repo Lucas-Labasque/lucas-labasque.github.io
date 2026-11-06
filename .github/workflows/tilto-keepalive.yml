@@ -1,0 +1,26 @@
+# Garde actif le projet Supabase de TILTO (plan gratuit : pause après environ 7 jours
+# sans activité). Indispensable pendant la validation Apple / Google : une base en pause
+# ferait échouer la connexion des testeurs, donc un refus.
+# La requête lit l'identifiant d'un thème de quiz (contenu déjà public dans l'app).
+# La clé ci-dessous est la clé publique déjà embarquée dans l'application.
+name: TILTO - garder Supabase actif
+
+on:
+  schedule:
+    - cron: '41 5 */3 * *'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Interroger la base
+        run: |
+          curl --fail --silent --show-error --max-time 30 \
+            --retry 3 --retry-delay 30 --retry-all-errors \
+            --output /dev/null --write-out 'HTTP %{http_code}\n' \
+            --header 'apikey: sb_publishable_gqezg761NcSx5ifKNYwJkQ_6fn8ilN6' \
+            'https://pcyfplkjshvburrcygmv.supabase.co/rest/v1/themes?select=id&limit=1'
