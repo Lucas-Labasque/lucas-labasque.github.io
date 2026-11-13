@@ -4,131 +4,186 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-itunes-app" content="app-id=6760430190">
-<title>Compteur de Points – Aide et confidentialité / Help and privacy</title>
-<meta name="description" content="Aide, contact et politique de confidentialité de l'application Compteur de Points (iPhone et Android). Help, contact and privacy policy of the Compteur de Points app.">
+<title>Compteur de Points : carnet de score pour Skyjo, Yams, Uno, Tarot</title>
+<meta name="description" content="Compteur de Points compte les scores de Skyjo, Yams, Uno, Tarot, Flip 7, Phase 10 et Qwirkle. Classement en direct et vainqueur désigné. Gratuit sur iPhone et Android.">
 <link rel="canonical" href="https://lucas-labasque.github.io/compteur-points/">
+<link rel="alternate" hreflang="fr" href="https://lucas-labasque.github.io/compteur-points/">
+<link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/compteur-points/en.html">
+<link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/compteur-points/">
+<link rel="icon" href="icone.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#FFD100">
+<meta property="og:site_name" content="Compteur de Points">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Compteur de Points : carnet de score pour Skyjo, Yams, Uno, Tarot">
+<meta property="og:description" content="Compteur de Points compte les scores de Skyjo, Yams, Uno, Tarot, Flip 7, Phase 10 et Qwirkle. Classement en direct et vainqueur désigné. Gratuit sur iPhone et Android.">
+<meta property="og:url" content="https://lucas-labasque.github.io/compteur-points/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://lucas-labasque.github.io/compteur-points/images/partage-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Compteur de Points : le carnet de score de Skyjo, Yams, Uno, Tarot, Flip 7, Phase 10 et Qwirkle">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lucas-labasque.github.io/compteur-points/images/partage-fr.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "@id": "https://lucas-labasque.github.io/compteur-points/#app",
+  "name": "Compteur de Points",
+  "alternateName": "Compteur de Points - Jeux",
+  "description": "Compteur de Points compte les scores de Skyjo, Yams, Uno, Tarot, Flip 7, Phase 10 et Qwirkle. Classement en direct et vainqueur désigné. Gratuit sur iPhone et Android.",
+  "url": "https://lucas-labasque.github.io/compteur-points/",
+  "image": "https://lucas-labasque.github.io/compteur-points/icone.png",
+  "screenshot": [
+    "https://lucas-labasque.github.io/compteur-points/images/accueil-fr.webp",
+    "https://lucas-labasque.github.io/compteur-points/images/partie-fr.webp",
+    "https://lucas-labasque.github.io/compteur-points/images/fin-fr.webp"
+  ],
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Android, iOS",
+  "inLanguage": [
+    "fr",
+    "en",
+    "de",
+    "es",
+    "it",
+    "nl",
+    "pt"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "10",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "sameAs": [
+    "https://apps.apple.com/app/id6760430190",
+    "https://play.google.com/store/apps/details?id=com.lucaslbsq.skyjoscore",
+    "https://www.compteurpoints.com/"
+  ],
+  "author": {
+    "@type": "Person",
+    "@id": "https://lucas-labasque.github.io/#person",
+    "name": "Lucas Labasque",
+    "url": "https://lucas-labasque.github.io/"
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-<style>
-  :root { --fond: #F0F5F9; --carte: #FFFFFF; --texte: #1A2B4C; --doux: #64748B; --marque: #FFD100; --fonce: #005BBB; --trait: #CBD5E1; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 Nunito, system-ui, sans-serif; }
-  header { background: var(--marque); color: var(--texte); text-align: center; padding: 32px 16px 44px; }
-  h1, h2 { font-family: "Lilita One", Nunito, sans-serif; font-weight: 400; letter-spacing: .5px; }
-  h1 { font-size: 34px; margin: 0; }
-  header a { color: var(--texte); font-weight: 700; }
-  main { max-width: 760px; margin: -24px auto 0; padding: 0 16px 48px; }
-  section { background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; box-shadow: 0 4px 0 var(--trait); }
-  h2 { color: var(--fonce); font-size: 28px; margin: 0 0 4px; }
-  h3 { font-size: 18px; margin: 20px 0 2px; }
-  a { color: var(--fonce); font-weight: 700; }
-  .date { color: var(--doux); margin-top: 0; }
-  footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
-  .boutons { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; margin-top: 16px; }
-  .badge { display: inline-block; line-height: 0; border-radius: 9px; }
-  .badge img { display: block; height: 48px; width: auto; }
-  .badge:hover { opacity: .85; }
-  .badge:focus-visible { outline: 3px solid var(--texte); outline-offset: 3px; }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../fiche.css">
+<style>:root { --bg: #FFD100; --ink: #1A2B4C; --titre: #1A2B4C; --ombre: #1A2B4C; --fond: #F0F5F9; --fonce: #005BBB; --accent: #FFD100; }</style>
 </head>
 <body>
-<header>
-  <h1>Compteur de Points</h1>
-  <p><a href="#fr">Français</a> · <a href="#en">English</a></p>
-  <div class="boutons">
-    <a class="badge" href="https://apps.apple.com/app/id6760430190"><img src="../badges/app-store-fr.svg" alt="Télécharger dans l'App Store" width="127" height="40"></a>
-    <a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.skyjoscore"><img src="../badges/google-play-fr.png" alt="Disponible sur Google Play" width="135" height="40"></a>
+<nav class="barre" aria-label="Navigation du site">
+  <a class="moi-lien" href="../"><img src="../avatar-petit.webp" alt="" width="36" height="36"><span>Lucas Labasque</span></a>
+  <a class="langue" href="en.html" hreflang="en" lang="en">English</a>
+</nav>
+<header class="fiche">
+  <div class="fiche-in">
+    <div class="texte">
+      <h1><span class="nom" translate="no">Compteur de Points</span> <span class="sous">Le carnet de score de tes soirées jeux</span></h1>
+      <p>Skyjo, Yams, Uno, Tarot, Flip 7, Phase 10 et Qwirkle, sans papier ni crayon</p>
+      <div class="boutons">
+        <a class="badge" href="https://apps.apple.com/app/id6760430190"><img src="../badges/app-store-fr.svg" alt="Télécharger dans l'App Store" width="127" height="40"></a>
+        <a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.skyjoscore"><img src="../badges/google-play-fr.png" alt="Disponible sur Google Play" width="135" height="40"></a>
+      </div>
+      <p class="note"><span class="etoiles" role="img" aria-label="Note de 5 sur 5">★★★★★</span><strong>5,0/5</strong> sur l'App Store, 10 notes</p>
+    </div>
+    <img class="sticker" src="icone-480.webp" alt="Icône de Compteur de Points" width="232" height="232">
   </div>
 </header>
 <main>
-  <section id="aide" lang="fr">
-    <h2>Aide et contact</h2>
-    <p>Une question, un bug, une idée de jeu à ajouter ? Écris-moi à <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a>, je réponds à tout.</p>
-    <p><strong>Achats « Sans pub » :</strong> pour les retrouver sur un nouveau téléphone, ouvre Paramètres dans l'application puis « Restaurer mes achats ». Pour résilier un abonnement : Réglages > ton nom > Abonnements sur iPhone, ou Play Store > Paiements et abonnements sur Android.</p>
-    <p lang="en"><strong>Help (English):</strong> questions, bugs or game ideas: <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a>. To get your "No ads" purchase back on a new phone, open Settings in the app and tap "Restore purchases". To cancel a subscription: Settings > your name > Subscriptions on iPhone, or Play Store > Payments & subscriptions on Android.</p>
+  <section>
+    <h2>Fini les ratures, place au jeu</h2>
+    <p>Ajoute les joueurs, saisis les points de chaque manche : l'appli fait les calculs et affiche le classement en direct. Plus de feuille perdue sous la table ni d'erreur d'addition.</p>
+    <p>Chaque jeu a son propre écran de saisie. Au Tarot, l'appli calcule les contrats, les bouts et les poignées ; au Yams, elle tient la feuille de marque complète.</p>
   </section>
 
-  <section id="fr" lang="fr">
-    <h2>Politique de confidentialité</h2>
-    <p class="date">Dernière mise à jour : 21 octobre 2026</p>
-
-    <h3>Qui sommes-nous ?</h3>
-    <p>Compteur de Points est une application éditée par Lucas Labasque, développeur indépendant. Pour toute question sur tes données : <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a>.</p>
-
-    <h3>Pas de compte utilisateur</h3>
-    <p>L'application ne demande aucun compte et n'intègre pas d'outil de statistiques d'utilisation. Les régies publicitaires et le service de vérification des achats décrits plus bas effectuent leurs propres traitements.</p>
-
-    <h3>Ce qui reste dans ton téléphone</h3>
-    <p>Tes parties (noms des joueurs, scores, historique) et tes réglages (prénom, thème, langue, vibrations, limites de score) sont enregistrés uniquement dans la mémoire de ton téléphone. Nous n'y avons pas accès. Ils sont effacés quand tu supprimes l'application.</p>
-    <p>L'annonce vocale des scores utilise la synthèse vocale de ton téléphone. Le partage d'une partie crée une image sur ton téléphone, envoyée seulement si tu choisis une application dans la fenêtre de partage. Le bouton pour proposer un jeu ouvre simplement ton application d'e-mail.</p>
-
-    <h3>Publicités Google AdMob (iPhone et Android)</h3>
-    <p>L'application affiche des publicités plein écran entre les manches et en fin de partie. Elles sont fournies par Google AdMob (Google Ireland Limited / Google LLC), qui peut faire appel à ses partenaires Unity Ads (Unity Technologies) et Liftoff Monetize (Liftoff Mobile / Vungle). L'application demande uniquement des publicités <strong>non personnalisées</strong> et ne te demande pas l'autorisation de suivi sur iPhone.</p>
-    <p>Pour afficher et mesurer ces publicités, limiter leur répétition et lutter contre la fraude, ces régies peuvent collecter : l'adresse IP (et une localisation approximative qui en découle), des informations sur l'appareil et le système, tes interactions avec les publicités, des identifiants techniques et des données de diagnostic, ainsi que l'identifiant publicitaire de l'appareil sur Android. Sur Android, tu peux réinitialiser ou supprimer cet identifiant dans les réglages (Google > Annonces).</p>
-    <p>Pour en savoir plus : <a href="https://policies.google.com/technologies/partner-sites">comment Google utilise les données des applications partenaires</a> et les règles de confidentialité <a href="https://policies.google.com/privacy">de Google</a>, <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">de Unity</a> et <a href="https://liftoff.io/privacy-policy/">de Liftoff</a>.</p>
-
-    <h3>Option « Sans pub » (achats intégrés)</h3>
-    <p>Tu peux supprimer les publicités avec un abonnement d'un an ou un achat unique. Le paiement est entièrement géré par Apple (App Store) ou Google (Google Play) : nous ne voyons jamais tes informations bancaires.</p>
-    <p>Pour vérifier tes achats et les restaurer sur un autre appareil, l'application utilise RevenueCat (RevenueCat, Inc., États-Unis). RevenueCat reçoit un identifiant aléatoire créé par l'application (sans lien avec ton nom ou ton e-mail), les informations de tes achats dans l'application (produit, date, prix, pays de la boutique, identifiant de transaction), des informations sur l'appareil et le système, et l'adresse IP. Ces données servent uniquement à savoir si les publicités doivent être supprimées. Voir la <a href="https://www.revenuecat.com/privacy">politique de confidentialité de RevenueCat</a>.</p>
-    <p>Les abonnements se gèrent et se résilient dans les réglages de ton compte Apple ou Google Play.</p>
-
-    <h3>Ce que nous ne faisons pas</h3>
-    <p>Nous ne vendons aucune donnée, nous ne demandons ni nom réel, ni e-mail, ni photo, ni contacts, ni localisation précise, et l'application ne contient ni discussion ni contenu publié par les utilisateurs.</p>
-
-    <h3>Enfants</h3>
-    <p>Compteur de Points est une application tout public, mais elle n'est pas conçue spécialement pour les enfants de moins de 13 ans et nous ne collectons volontairement aucune donnée les concernant.</p>
-
-    <h3>Durée de conservation et transferts</h3>
-    <p>Les données traitées par Google, Unity, Liftoff et RevenueCat sont conservées par ces partenaires selon les durées indiquées dans leurs politiques de confidentialité. Certains sont situés hors de l'Union européenne ; ces transferts sont encadrés par les garanties prévues par le RGPD (clauses contractuelles types de la Commission européenne).</p>
-
-    <h3 id="suppression">Tes droits et la suppression des données</h3>
-    <p>Conformément au RGPD, tu peux demander l'accès, la correction ou la suppression de tes données et t'opposer à leur utilisation en écrivant à <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a>. Nous transmettrons ta demande à RevenueCat pour les données d'achat. Les demandes liées aux données publicitaires sont à adresser au partenaire concerné (Google, Unity ou Liftoff) via les liens ci-dessus. Pour effacer tes parties et réglages, désinstalle l'application. Tu peux aussi contacter la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
-
-    <h3>Modifications</h3>
-    <p>Si cette politique change, la date en haut de la page sera mise à jour et la nouvelle version s'appliquera dès sa publication.</p>
+  <section aria-labelledby="captures-titre">
+    <h2 id="captures-titre">Une partie de Skyjo dans l'appli</h2>
+    <div class="captures">
+      <figure>
+        <img src="images/accueil-fr.webp" alt="Écran d'accueil : la liste des jeux, Skyjo sélectionné, et le bouton Lancer la partie." width="520" height="1096" loading="lazy" decoding="async">
+        <figcaption>Choisis ton jeu parmi les 7 disponibles.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/partie-fr.webp" alt="Tableau d'une partie de Skyjo à la manche 4 : les points d'Inès, Tom et Sam et leurs totaux." width="520" height="1096" loading="lazy" decoding="async">
+        <figcaption>Note chaque manche, le total se met à jour.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/fin-fr.webp" alt="Écran de victoire : Inès gagne avec 72 points devant Sam et Tom." width="520" height="1096" loading="lazy" decoding="async">
+        <figcaption>L'appli désigne le vainqueur et le classement.</figcaption>
+      </figure>
+    </div>
   </section>
 
-  <section id="en" lang="en">
-    <h2>Privacy policy</h2>
-    <p class="date">Last updated: October 21, 2026</p>
-
-    <h3>Who we are</h3>
-    <p>Compteur de Points is an app published by Lucas Labasque, an independent developer. For any question about your data: <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a>.</p>
-
-    <h3>No user account</h3>
-    <p>The app requires no account and has no usage analytics service. The ad networks and the purchase verification service described below perform their own processing.</p>
-
-    <h3>What stays on your phone</h3>
-    <p>Your games (player names, scores, history) and your settings (first name, theme, language, vibrations, score limits) are saved only on your phone. We have no access to them. They are erased when you delete the app.</p>
-    <p>Spoken scores use your phone's built-in text-to-speech. Sharing a game creates an image on your phone, which is sent only if you pick an app in the share sheet. The button to suggest a game simply opens your email app.</p>
-
-    <h3>Google AdMob ads (iPhone and Android)</h3>
-    <p>The app shows full-screen ads between rounds and at the end of a game. They are provided by Google AdMob (Google Ireland Limited / Google LLC), which may use its partners Unity Ads (Unity Technologies) and Liftoff Monetize (Liftoff Mobile / Vungle). The app requests <strong>non-personalized</strong> ads only and does not ask for tracking permission on iPhone.</p>
-    <p>To show and measure these ads, cap how often they repeat, and prevent fraud, these ad networks may collect: the IP address (and an approximate location derived from it), device and system information, your interactions with ads, technical identifiers and diagnostic data, and the device advertising ID on Android. On Android, you can reset or delete this ID in your settings (Google > Ads).</p>
-    <p>Learn more: <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a> and the privacy policies <a href="https://policies.google.com/privacy">of Google</a>, <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">of Unity</a> and <a href="https://liftoff.io/privacy-policy/">of Liftoff</a>.</p>
-
-    <h3>"No ads" option (in-app purchases)</h3>
-    <p>You can remove ads with a one-year subscription or a one-time purchase. Payment is handled entirely by Apple (App Store) or Google (Google Play): we never see your payment details.</p>
-    <p>To verify your purchases and restore them on another device, the app uses RevenueCat (RevenueCat, Inc., United States). RevenueCat receives a random identifier created by the app (not linked to your name or email), information about your in-app purchases (product, date, price, store country, transaction ID), device and system information, and the IP address. This data is only used to know whether ads should be removed. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</p>
-    <p>Subscriptions are managed and cancelled in your Apple or Google Play account settings.</p>
-
-    <h3>What we don't do</h3>
-    <p>We sell no data, we ask for no real name, email, photo, contacts or precise location, and the app has no chat or user-published content.</p>
-
-    <h3>Children</h3>
-    <p>Compteur de Points is suitable for everyone, but it is not designed specifically for children under 13 and we do not knowingly collect any data about them.</p>
-
-    <h3>Retention and transfers</h3>
-    <p>Data processed by Google, Unity, Liftoff and RevenueCat is kept by these partners for the periods stated in their privacy policies. Some of them are located outside the European Union; these transfers rely on the safeguards provided by the GDPR (European Commission standard contractual clauses).</p>
-
-    <h3 id="deletion">Your rights and data deletion</h3>
-    <p>Under the GDPR, you can request access to, correction or deletion of your data and object to its use by writing to <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a>. We will forward your request to RevenueCat for purchase data. Requests about advertising data should be sent to the partner concerned (Google, Unity or Liftoff) via the links above. To erase your games and settings, uninstall the app. You can also contact the French data protection authority, the CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
-
-    <h3>Changes</h3>
-    <p>If this policy changes, the date at the top of the page will be updated and the new version will apply as soon as it is published.</p>
+  <section>
+    <h2>7 jeux dans une seule appli</h2>
+    <ul class="jeux">
+      <li><strong>Skyjo</strong> : les points de chaque manche, avec une limite de fin de partie réglable.</li>
+      <li><strong>Tarot</strong> : contrats, bouts, petit au bout, poignées et chelem calculés à 3, 4 ou 5 joueurs.</li>
+      <li><strong>Yams</strong> : la feuille de marque complète : brelan, carré, full, suites, Yams, chance et bonus.</li>
+      <li><strong>Flip 7</strong> : cartes, bonus et multiplicateurs ; le bonus Flip 7 s'ajoute tout seul.</li>
+      <li><strong>Uno</strong> : les points des cartes restantes après chaque manche.</li>
+      <li><strong>Phase 10</strong> : la phase de chaque joueur et ses points de pénalité.</li>
+      <li><strong>Qwirkle</strong> : les points de chaque tour, Qwirkle compris.</li>
+    </ul>
+    <h3>Et aussi</h3>
+    <ul class="plus">
+      <li>Classement en direct après chaque manche</li>
+      <li>Reprise d'une partie en cours à tout moment</li>
+      <li>Historique de toutes tes parties</li>
+      <li>Partage du résultat en image</li>
+      <li>Annonce des scores à voix haute</li>
+      <li>En 7 langues</li>
+    </ul>
   </section>
+
+  <section>
+    <h2>Comment ça marche</h2>
+    <ol class="etapes">
+      <li><strong>Choisis ton jeu.</strong> Lance la partie en un geste et ajoute les joueurs autour de la table.</li>
+      <li><strong>Note chaque manche.</strong> Saisis les points de chacun en quelques secondes ; pour plusieurs jeux, l'appli fait le calcul à ta place.</li>
+      <li><strong>Découvre le vainqueur.</strong> Le classement se met à jour en direct et l'appli annonce le gagnant à la fin.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Questions fréquentes</h2>
+    <h3>L'appli est-elle gratuite ?</h3>
+    <p>Oui, elle est gratuite avec des publicités. Une option « Sans pub » est proposée en achat intégré (1 an, 1 an avec soutien, ou à vie).</p>
+    <h3>Ai-je besoin d'une connexion internet ?</h3>
+    <p>Non pour compter les points : tes parties restent enregistrées sur ton téléphone. Les publicités ont besoin d'une connexion pour s'afficher.</p>
+    <h3>Comment l'appli désigne-t-elle le vainqueur ?</h3>
+    <p>Elle suit la règle du jeu choisi : au Skyjo, le total le plus bas gagne ; à l'Uno ou au Qwirkle, c'est le plus haut.</p>
+    <h3>Il manque mon jeu préféré</h3>
+    <p>Propose-le depuis l'appli ou écris-moi : de nouveaux jeux arrivent régulièrement.</p>
+    <p><a href="confidentialite.html">Aide, achats et politique de confidentialité</a></p>
+  </section>
+
+  <section>
+    <h2>Règles et démo de chaque jeu</h2>
+    <p>Les règles résumées, le calcul des points et une démo interactive de l'appli pour chaque jeu sont sur <a href="https://www.compteurpoints.com/">compteurpoints.com</a>.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Nous contacter</h2>
+    <p>Une question, un bug, un jeu à ajouter ?<br>Écris à <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a></p>
+  </section>
+  <p class="mention">Application non officielle, non affiliée aux éditeurs des jeux cités.</p>
 </main>
-<footer>Compteur de Points · Lucas Labasque · <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a> · <a href="../">Tous mes jeux</a></footer>
+<footer>
+  <a class="auteur" href="../" aria-label="Lucas Labasque : tous mes jeux et applis"><img src="../avatar-petit.webp" alt="" width="144" height="144" loading="lazy"></a>
+  Compteur de Points – © 2026 Lucas Labasque · <a href="confidentialite.html">Aide et confidentialité</a> · <a href="../">Tous mes jeux</a>
+</footer>
 </body>
 </html>

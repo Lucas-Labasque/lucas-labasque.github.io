@@ -10,6 +10,7 @@
 <link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/empile-les-crepes/en.html">
 <link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/empile-les-crepes/">
 <link rel="icon" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
 <meta name="theme-color" content="#FCD59E">
 <meta property="og:site_name" content="Empile les crêpes">
 <meta property="og:type" content="website">
@@ -44,70 +45,65 @@
     "fr",
     "en"
   ],
-  "applicationCategory": "Game",
+  "applicationCategory": "GameApplication",
   "offers": {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "EUR"
   },
+  "operatingSystem": "Android, iOS",
+  "sameAs": [
+    "https://play.google.com/store/apps/details?id=com.lucaslbsq.empilelescrepes"
+  ],
   "author": {
     "@type": "Person",
-    "name": "Lucas Labasque"
+    "@id": "https://lucas-labasque.github.io/#person",
+    "name": "Lucas Labasque",
+    "url": "https://lucas-labasque.github.io/"
   }
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-<style>
-  :root { --fond: #DDF0FC; --carte: #FFFFFF; --texte: #1F2A44; --doux: #4A5875; --marque: #FCD59E; --fonce: #1F2A44; --orange: #FF9F1C; --trait: #B8DDF5; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 Nunito, system-ui, sans-serif; }
-  header { position: relative; background: var(--marque); color: var(--fonce); text-align: center; padding: 40px 16px 56px; overflow: hidden; }
-  header::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 34px; background: #3F5A80; clip-path: polygon(0 100%,0 45%,9% 45%,9% 15%,21% 15%,21% 55%,38% 55%,38% 5%,52% 5%,52% 40%,70% 40%,70% 20%,86% 20%,86% 50%,100% 50%,100% 100%); }
-  header img.icone { width: 112px; height: 112px; border-radius: 26px; border: 4px solid var(--fonce); box-shadow: 0 6px 0 var(--fonce); }
-  h1, h2 { font-family: Fredoka, Nunito, sans-serif; font-weight: 600; }
-  h1 { font-size: 40px; margin: 18px 0 4px; line-height: 1.15; }
-  header p { margin: 0; font-size: 19px; }
-  .langue { position: absolute; top: 12px; right: 16px; z-index: 1; color: var(--fonce); font-weight: 700; }
-  main { max-width: 760px; margin: -24px auto 0; padding: 0 16px 48px; position: relative; }
-  section { background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; border: 3px solid var(--fonce); box-shadow: 0 5px 0 var(--fonce); }
-  h2 { color: var(--fonce); font-size: 26px; margin: 0 0 8px; }
-  h3 { font-size: 18px; margin: 18px 0 2px; }
-  a { color: #185FA5; font-weight: 700; }
-  .boutons { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; justify-content: center; margin-top: 22px; }
-  .bouton { display: inline-block; padding: 12px 22px; border-radius: 16px; border: 3px solid var(--fonce); border-bottom-width: 7px; background: var(--orange); color: var(--fonce); text-decoration: none; font-weight: 700; }
-  .bouton.blanc { background: #fff; }
-  .regle { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-  .regle figure { margin: 0; background: var(--fond); border-radius: 16px; padding: 14px; text-align: center; }
-  .regle img { width: 120px; height: 100px; }
-  .regle figcaption { font-weight: 700; }
-  .ok { color: #27500A; } .ko { color: #A32D2D; }
-  ul { padding-left: 22px; }
-  .contact { text-align: center; font-size: 20px; }
-  footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
-  @media (max-width: 480px) { h1 { font-size: 30px; } section { padding: 20px 16px; } }
-  .badge { display: inline-block; line-height: 0; border-radius: 9px; }
-  .badge img { display: block; height: 48px; width: auto; }
-  .badge:hover { opacity: .85; }
-  .badge:focus-visible { outline: 3px solid var(--fonce); outline-offset: 3px; }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../fiche.css">
+<style>:root { --bg: #FCD59E; --ink: #1F2A44; --titre: #1F2A44; --ombre: #1F2A44; --fond: #FFF4E3; --fonce: #9A4A0C; --accent: #FF9F1C; }</style>
 </head>
 <body>
-<a class="langue" href="./" hreflang="fr">Français</a>
-<header>
-  <img class="icone" src="icone.png" alt="Empile les crêpes icon" width="112" height="112">
-  <h1>Stack the Pancakes, the tapping game</h1>
-  <p>Tap at the right moment, stack the pancakes… and climb up to the stars!</p>
-  <div class="boutons">
-    <a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.empilelescrepes"><img src="../badges/google-play-en.png" alt="Get it on Google Play" width="135" height="40"></a>
-    <span class="bouton blanc">Coming soon to the App Store</span>
+<nav class="barre" aria-label="Navigation">
+  <a class="moi-lien" href="../en.html"><img src="../avatar-petit.webp" alt="" width="36" height="36"><span>Lucas Labasque</span></a>
+  <a class="langue" href="./" hreflang="fr">Français</a>
+</nav>
+<header class="fiche">
+  <div class="fiche-in">
+    <div class="texte">
+      <h1><span class="nom" translate="no">Stack the Pancakes</span> <span class="sous">The tapping game</span></h1>
+      <p>Tap at the right moment, stack the pancakes… and climb up to the stars!</p>
+      <div class="boutons">
+        <a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.empilelescrepes"><img src="../badges/google-play-en.png" alt="Get it on Google Play" width="135" height="40"></a>
+        <span class="bouton blanc">Coming soon to the App Store</span>
+      </div>
+    </div>
+    <img class="sticker" src="icone-480.webp" alt="Empile les crêpes icon" width="232" height="232">
   </div>
 </header>
 <main>
   <section>
     <h2>One tap, endless pancakes</h2>
     <p>A pancake slides above the plate: tap to drop it on the stack. Anything that hangs over is sliced off and the stack gets narrower. Rounds last from 30 seconds to 2 minutes and can be played with one hand, perfect for a quick break.</p>
+  </section>
+
+  <section aria-labelledby="captures-titre">
+    <h2 id="captures-titre">See the game</h2>
+    <div class="captures">
+      <img src="images/store-debut-en.webp" alt="Tap to drop the pancake." width="440" height="956" loading="lazy" decoding="async">
+      <img src="images/store-parfait-en.webp" alt="Aim for “Perfect!” to keep the stack straight." width="440" height="956" loading="lazy" decoding="async">
+      <img src="images/store-coucher-en.webp" alt="Climb up to the sunset." width="440" height="956" loading="lazy" decoding="async">
+      <img src="images/store-nuit-en.webp" alt="And up to the stars!" width="440" height="956" loading="lazy" decoding="async">
+      <img src="images/store-fin-en.webp" alt="Beat your record!" width="440" height="956" loading="lazy" decoding="async">
+      <img src="images/store-scores-en.webp" alt="Track your scores and your top 5." width="440" height="956" loading="lazy" decoding="async">
+      <img src="images/store-menu-en.webp" alt="The Stack the Pancakes menu." width="440" height="956" loading="lazy" decoding="async">
+    </div>
   </section>
 
   <section>
@@ -151,6 +147,7 @@
   </section>
 </main>
 <footer>
+  <a class="auteur" href="../en.html" aria-label="Lucas Labasque: all my games and apps"><img src="../avatar-petit.webp" alt="" width="144" height="144" loading="lazy"></a>
   Empile les crêpes – © 2026 Lucas Labasque · <a href="confidentialite.html#en">Privacy policy</a> · <a href="../en.html">All my games</a>
 </footer>
 </body>
