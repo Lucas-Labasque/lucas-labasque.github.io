@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6760430190">
 <title>Compteur de Points – Aide et confidentialité / Help and privacy</title>
 <meta name="description" content="Aide, contact et politique de confidentialité de l'application Compteur de Points (iPhone et Android). Help, contact and privacy policy of the Compteur de Points app.">
 <link rel="canonical" href="https://lucas-labasque.github.io/compteur-points/">
@@ -24,12 +25,21 @@
   a { color: var(--fonce); font-weight: 700; }
   .date { color: var(--doux); margin-top: 0; }
   footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
+  .boutons { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; margin-top: 16px; }
+  .badge { display: inline-block; line-height: 0; border-radius: 9px; }
+  .badge img { display: block; height: 48px; width: auto; }
+  .badge:hover { opacity: .85; }
+  .badge:focus-visible { outline: 3px solid var(--texte); outline-offset: 3px; }
 </style>
 </head>
 <body>
 <header>
   <h1>Compteur de Points</h1>
   <p><a href="#fr">Français</a> · <a href="#en">English</a></p>
+  <div class="boutons">
+    <a class="badge" href="https://apps.apple.com/app/id6760430190"><img src="../badges/app-store-fr.svg" alt="Télécharger dans l'App Store" width="127" height="40"></a>
+    <a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.skyjoscore"><img src="../badges/google-play-fr.png" alt="Disponible sur Google Play" width="135" height="40"></a>
+  </div>
 </header>
 <main>
   <section id="aide" lang="fr">

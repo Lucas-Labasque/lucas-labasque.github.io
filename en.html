@@ -4,39 +4,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lucas Labasque – Mobile games and apps</title>
-<meta name="description" content="Games and apps by Lucas Labasque for iPhone and Android: Wordly 3D, Tap le Pigeon, Stack the Pancakes and Compteur de Points.">
+<meta name="description" content="Games and apps by Lucas Labasque for iPhone and Android: TILTO, Wordly 3D, Tap le Pigeon, Stack the Pancakes, Poulet Cascadeur, Rappel Ménage and Compteur de Points.">
 <link rel="canonical" href="https://lucas-labasque.github.io/en.html">
 <link rel="alternate" hreflang="fr" href="https://lucas-labasque.github.io/">
 <link rel="alternate" hreflang="en" href="https://lucas-labasque.github.io/en.html">
 <link rel="alternate" hreflang="x-default" href="https://lucas-labasque.github.io/">
 <link rel="icon" href="tap-le-pigeon/icone.png">
+<meta name="theme-color" content="#F6F4EF">
+<meta property="og:site_name" content="Lucas Labasque">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lucas Labasque – Mobile games and apps">
-<meta property="og:description" content="Games and apps by Lucas Labasque for iPhone and Android: Wordly 3D, Tap le Pigeon, Stack the Pancakes and Compteur de Points.">
+<meta property="og:description" content="Games and apps by Lucas Labasque for iPhone and Android: TILTO, Wordly 3D, Tap le Pigeon, Stack the Pancakes, Poulet Cascadeur, Rappel Ménage and Compteur de Points.">
 <meta property="og:url" content="https://lucas-labasque.github.io/en.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://lucas-labasque.github.io/partage-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lucas Labasque: games and apps for iPhone and Android">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lucas-labasque.github.io/partage-en.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  :root { --fond: #F6F4EF; --carte: #FFFFFF; --texte: #22252B; --doux: #5F6470; --fonce: #22252B; --trait: #E4E0D7; }
+  :root { --fond: #F6F4EF; --carte: #FFFFFF; --texte: #22252B; --doux: #5F6470; --fonce: #22252B; --trait: #E4E0D7; --lien: #185FA5; --puce: #EFECE4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #17181C; --carte: #24262C; --texte: #F3F1EC; --doux: #A9ADB8; --fonce: #F3F1EC; --trait: #0E0F12; --lien: #8EC1F2; --puce: #33363E; }
+  }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 Nunito, system-ui, sans-serif; }
-  header { position: relative; text-align: center; padding: 48px 16px 24px; }
-  h1, h2 { font-family: "Lilita One", Nunito, sans-serif; font-weight: 400; letter-spacing: .5px; }
-  h1 { font-size: 42px; margin: 0; }
-  header p { margin: 4px 0 0; font-size: 19px; color: var(--doux); }
+  header { position: relative; text-align: center; padding: 56px 16px 20px; }
+  h1, h2, h3 { font-family: "Lilita One", Nunito, sans-serif; font-weight: 400; letter-spacing: .5px; }
+  h1 { font-size: 46px; line-height: 1.1; margin: 0; }
+  header p { margin: 6px 0 0; font-size: 19px; color: var(--doux); }
   .langue { position: absolute; top: 12px; right: 16px; color: var(--texte); font-weight: 700; }
-  main { max-width: 760px; margin: 0 auto; padding: 8px 16px 40px; }
-  .app { display: flex; gap: 20px; align-items: flex-start; background: var(--carte); border-radius: 20px; padding: 22px 24px; margin-bottom: 18px; box-shadow: 0 4px 0 var(--trait); }
-  .app img, .sans-icone { width: 88px; height: 88px; flex: none; border-radius: 22px; }
-  .sans-icone { display: grid; place-items: center; font-family: "Lilita One", sans-serif; font-size: 30px; color: #1A2B4C; }
-  .app h2 { font-size: 26px; margin: 0 0 4px; }
-  .app h2 a { color: var(--texte); text-decoration: none; }
-  .app p { margin: 0 0 8px; }
-  a { color: #185FA5; font-weight: 700; }
-  .liens { color: var(--doux); }
+  a { color: var(--lien); font-weight: 700; }
+  .boutons { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
+  .bouton { display: inline-block; padding: 9px 18px; border-radius: 14px; background: var(--fonce); color: var(--fond); text-decoration: none; }
+  main { max-width: 980px; margin: 0 auto; padding: 8px 16px 40px; }
+  h2 { font-size: 28px; margin: 28px 4px 12px; }
+  .grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); gap: 18px; }
+  .app { display: flex; gap: 18px; align-items: flex-start; background: var(--carte); border-radius: 20px; padding: 20px 22px; box-shadow: 0 4px 0 var(--trait); }
+  .icone { width: 80px; height: 80px; flex: none; border-radius: 20px; display: grid; place-items: center; overflow: hidden; }
+  .icone img { width: 100%; height: 100%; display: block; }
+  .icone svg { width: 54px; height: 54px; }
+  .icone.cp { background: #FFD100; color: #1A2B4C; font-family: "Lilita One", sans-serif; font-size: 28px; }
+  .icone.tilto { background: #6842E8; }
+  .app > div:not(.icone) { min-width: 0; flex: 1; }
+  .app h3 { font-size: 24px; line-height: 1.2; margin: 0; }
+  .app h3 a { color: var(--texte); text-decoration: none; }
+  .app h3 a:hover { text-decoration: underline; }
+  .genre { display: inline-block; margin: 6px 0 0; padding: 1px 10px; border-radius: 999px; background: var(--puce); color: var(--doux); font-size: 14px; font-weight: 700; }
+  .app p { margin: 8px 0; }
+  .stores { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 12px 0 8px; }
+  .store { display: inline-block; padding: 5px 14px; border-radius: 12px; border: 2px solid var(--fonce); color: var(--texte); text-decoration: none; font-size: 15px; }
+  .store:hover, .bouton:hover { opacity: .8; }
+  .store.attente { border-style: dashed; border-color: var(--doux); color: var(--doux); font-weight: 700; }
+  .liens { color: var(--doux); font-size: 15px; margin-bottom: 0 !important; }
   footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
-  @media (max-width: 480px) { h1 { font-size: 32px; } .app { padding: 18px 16px; gap: 14px; } .app img, .sans-icone { width: 64px; height: 64px; border-radius: 16px; font-size: 22px; } }
+  a:focus-visible { outline: 3px solid var(--lien); outline-offset: 2px; border-radius: 6px; }
+  @media (max-width: 480px) { h1 { font-size: 34px; } .app { padding: 18px 16px; gap: 14px; } .icone { width: 60px; height: 60px; border-radius: 15px; } .icone svg { width: 40px; height: 40px; } .icone.cp { font-size: 21px; } .app h3 { font-size: 22px; } }
+  .badge { display: inline-block; line-height: 0; border-radius: 9px; }
+  .badge img { display: block; height: 40px; width: auto; }
+  .badge:hover { opacity: .85; }
+  .badge:focus-visible { outline: 3px solid var(--lien); outline-offset: 3px; }
 </style>
 </head>
 <body>
@@ -44,56 +75,88 @@
 <header>
   <h1>Lucas Labasque</h1>
   <p>Games and apps for iPhone and Android</p>
+  <div class="boutons">
+    <a class="bouton" href="https://apps.apple.com/developer/lucas-labasque/id1876253440">My apps on the App Store</a>
+    <a class="bouton" href="https://play.google.com/store/apps/developer?id=Lucas+Labasque">My apps on Google Play</a>
+  </div>
 </header>
 <main>
+  <h2>Games</h2>
+  <div class="grille">
     <article class="app">
-      <img src="wordly-3d/icone.png" alt="" width="88" height="88">
+      <div class="icone tilto"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="m14 2-9 12h6l-1 8L20 9h-7l1-7Z" fill="#D7F76B" transform="translate(5 1)"/><path d="m14 2-9 12h6l-1 8L20 9h-7l1-7Z" fill="#FFFFFF" transform="translate(0 2) scale(1.05)"/></svg></div>
       <div>
-        <h2><a href="wordly-3d/en.html">Wordly 3D</a></h2>
+        <h3><a href="tilto/">TILTO</a></h3>
+        <span class="genre">Quiz duel</span>
+        <p>7 questions, 10 seconds per answer and a final round that counts double. Challenge your friends or another player.</p>
+        <div class="stores"><a class="badge" href="https://apps.apple.com/app/id6828531555"><img src="badges/app-store-en.svg" alt="Download TILTO on the App Store" width="120" height="40"></a><a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.tilto"><img src="badges/google-play-en.png" alt="Get TILTO on Google Play" width="135" height="40"></a></div>
+        <p class="liens"><a href="tilto/">Discover</a> · <a href="tilto/confidentialite.html#en">Privacy</a></p>
+      </div>
+    </article>
+    <article class="app">
+      <div class="icone"><img src="wordly-3d/icone.png" alt="" width="80" height="80" loading="lazy"></div>
+      <div>
+        <h3><a href="wordly-3d/en.html">Wordly 3D</a></h3>
+        <span class="genre">Word search</span>
         <p>3D word search: spin a burger or a pizza to find the hidden words. 30 levels, playable offline.</p>
+        <div class="stores"><a class="badge" href="https://apps.apple.com/app/id6824258424"><img src="badges/app-store-en.svg" alt="Download Wordly 3D on the App Store" width="120" height="40"></a><a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslabasque.wordly3d"><img src="badges/google-play-en.png" alt="Get Wordly 3D on Google Play" width="135" height="40"></a></div>
         <p class="liens"><a href="wordly-3d/en.html">Discover</a> · <a href="wordly-3d/confidentialite.html#en">Privacy</a></p>
       </div>
     </article>
     <article class="app">
-      <img src="tap-le-pigeon/icone.png" alt="" width="88" height="88">
+      <div class="icone"><img src="tap-le-pigeon/icone.png" alt="" width="80" height="80" loading="lazy"></div>
       <div>
-        <h2><a href="tap-le-pigeon/en.html">Tap le Pigeon</a></h2>
+        <h3><a href="tap-le-pigeon/en.html">Tap le Pigeon</a></h3>
+        <span class="genre">Reflex</span>
         <p>Reflex game: tap the pigeons as fast as you can, but spare the doves! Combos, challenges and unlockable looks.</p>
+        <div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.taplepigeon"><img src="badges/google-play-en.png" alt="Get Tap le Pigeon on Google Play" width="135" height="40"></a></div>
         <p class="liens"><a href="tap-le-pigeon/en.html">Discover</a> · <a href="tap-le-pigeon/confidentialite.html#en">Privacy</a></p>
       </div>
     </article>
     <article class="app">
-      <img src="empile-les-crepes/icone.png" alt="" width="88" height="88">
+      <div class="icone"><img src="empile-les-crepes/icone.png" alt="" width="80" height="80" loading="lazy"></div>
       <div>
-        <h2><a href="empile-les-crepes/en.html">Stack the Pancakes</a></h2>
+        <h3><a href="empile-les-crepes/en.html">Stack the Pancakes</a></h3>
+        <span class="genre">Timing</span>
         <p>Tapping game: tap at the right moment to stack pancakes as high as you can, from morning to starry night.</p>
+        <div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.empilelescrepes"><img src="badges/google-play-en.png" alt="Get Stack the Pancakes on Google Play" width="135" height="40"></a></div>
         <p class="liens"><a href="empile-les-crepes/en.html">Discover</a> · <a href="empile-les-crepes/confidentialite.html#en">Privacy</a></p>
       </div>
     </article>
     <article class="app">
-      <img src="poulet-cascadeur/icone.png" alt="" width="88" height="88">
+      <div class="icone"><img src="poulet-cascadeur/icone.png" alt="" width="80" height="80" loading="lazy"></div>
       <div>
-        <h2><a href="poulet-cascadeur/en.html">Poulet Cascadeur</a></h2>
+        <h3><a href="poulet-cascadeur/en.html">Poulet Cascadeur</a></h3>
+        <span class="genre">Launcher</span>
         <p>Launch game: send a daredevil chicken flying as far as you can, bounce on trampolines and upgrade your catapult.</p>
+        <div class="stores"><span class="store attente">Coming soon</span></div>
         <p class="liens"><a href="poulet-cascadeur/en.html">Discover</a> · <a href="poulet-cascadeur/confidentialite.html#en">Privacy</a></p>
       </div>
     </article>
+  </div>
+  <h2>Apps</h2>
+  <div class="grille">
     <article class="app">
-      <img src="rappel-menage/icone.png" alt="" width="88" height="88">
+      <div class="icone"><img src="rappel-menage/icone.png" alt="" width="80" height="80" loading="lazy"></div>
       <div>
-        <h2><a href="rappel-menage/en.html">Rappel Ménage</a></h2>
+        <h3><a href="rappel-menage/en.html">Rappel Ménage</a></h3>
+        <span class="genre">Home</span>
         <p>Household app: plan the chores of each room, share them and get a reminder at the right time.</p>
+        <div class="stores"><span class="store attente">Coming soon</span></div>
         <p class="liens"><a href="rappel-menage/en.html">Discover</a> · <a href="rappel-menage/confidentialite.html#en">Privacy</a></p>
       </div>
     </article>
     <article class="app">
-      <div class="sans-icone" style="background:#FFD100" aria-hidden="true">CP</div>
+      <div class="icone cp" aria-hidden="true">CP</div>
       <div>
-        <h2><a href="compteur-points/#en">Compteur de Points</a></h2>
+        <h3><a href="compteur-points/#en">Compteur de Points</a></h3>
+        <span class="genre">Scores</span>
         <p>Keep score for your card and board games, no pen and paper needed.</p>
+        <div class="stores"><a class="badge" href="https://apps.apple.com/app/id6760430190"><img src="badges/app-store-en.svg" alt="Download Compteur de Points on the App Store" width="120" height="40"></a><a class="badge" href="https://play.google.com/store/apps/details?id=com.lucaslbsq.skyjoscore"><img src="badges/google-play-en.png" alt="Get Compteur de Points on Google Play" width="135" height="40"></a></div>
         <p class="liens"><a href="compteur-points/#en">Discover</a> · <a href="compteur-points/#en">Privacy</a></p>
       </div>
     </article>
+  </div>
 </main>
 <footer>A question about an app? Email <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a> · © 2026 Lucas Labasque</footer>
 </body>

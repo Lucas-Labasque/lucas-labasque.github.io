@@ -4,45 +4,97 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TILTO – Supprimer mon compte et mes données</title>
+<link rel="canonical" href="https://lucas-labasque.github.io/tilto/suppression-compte.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath d='m14 2-9 12h6l-1 8L20 9h-7l1-7Z' fill='%23D7F76B' transform='translate(5 1)'/%3E%3Cpath d='m14 2-9 12h6l-1 8L20 9h-7l1-7Z' fill='%236842E8' transform='translate(0 2) scale(1.05)'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#6842E8">
+<meta property="og:site_name" content="TILTO">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TILTO – Supprimer mon compte et mes données">
+<meta property="og:url" content="https://lucas-labasque.github.io/tilto/suppression-compte.html">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
-  body { font: 16px/1.6 system-ui, sans-serif; max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; color: #1b1a26; background: #f7f6fb; }
-  h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 2rem; }
-  a { color: #6842e8; }
-  @media (prefers-color-scheme: dark) { body { color: #ecebf5; background: #14131e; } a { color: #a893ff; } }
+  :root { --fond: #F7F6FB; --carte: #FFFFFF; --texte: #221B36; --doux: #6B6279; --marque: #6842E8; --citron: #D7F76B; --encre: #191A26; --trait: #E9E4F1; --lien: #6842E8; --puce: #EDE6FC; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #14131E; --carte: #22202F; --texte: #F7F5FA; --doux: #AAA4BC; --trait: #393346; --lien: #B69AFF; --puce: #34304A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 Manrope, system-ui, sans-serif; }
+  header { position: relative; background: var(--marque); color: #fff; text-align: center; padding: 40px 16px 64px; }
+  header .logo { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; }
+  header .logo svg { width: 64px; height: 64px; }
+  header .logo span { font-size: 48px; font-weight: 800; letter-spacing: -1px; }
+  header p { margin: 6px 0 0; font-size: 19px; font-weight: 700; }
+  header .slogan { display: inline-block; margin-top: 14px; background: var(--citron); color: var(--encre); border-radius: 999px; padding: 4px 14px; font-size: 15px; font-weight: 800; }
+  .langue { position: absolute; top: 12px; right: 16px; z-index: 1; color: #fff; font-weight: 700; }
+  main { max-width: 760px; margin: -32px auto 0; padding: 0 16px 48px; position: relative; }
+  section { background: var(--carte); border-radius: 24px; padding: 22px 24px; margin-bottom: 18px; border: 1px solid var(--trait); scroll-margin-top: 16px; }
+  h2 { font-size: 28px; line-height: 1.2; font-weight: 800; margin: 0 0 8px; }
+  h3 { font-size: 18px; font-weight: 800; margin: 20px 0 2px; }
+  p { margin: 8px 0; }
+  a { color: var(--lien); font-weight: 700; }
+  ul, ol { padding-left: 22px; margin: 6px 0; }
+  li { margin: 4px 0; }
+  footer { text-align: center; color: var(--doux); font-size: 15px; padding: 0 16px 32px; }
+  @media (max-width: 480px) { header .logo span { font-size: 38px; } section { padding: 20px 16px; } h2 { font-size: 24px; } }
+  h1 { font-size: 30px; line-height: 1.2; font-weight: 800; margin: 16px 0 0; }
+  h2 { font-size: 22px; }
+  @media (max-width: 480px) { h1 { font-size: 24px; } h2 { font-size: 20px; } }
 </style>
 </head>
 <body>
-<h1>Supprimer mon compte TILTO</h1>
-<p>Tu peux supprimer ton compte TILTO et les données associées à tout moment, de deux façons.</p>
-
-<h2>1. Depuis l’application (immédiat)</h2>
-<ol>
-  <li>Ouvre TILTO et connecte-toi.</li>
-  <li>Va dans <strong>Réglages</strong>, puis <strong>Supprimer mon compte</strong>.</li>
-  <li>Confirme. La suppression est définitive.</li>
-</ol>
-
-<h2>2. Par e-mail (si tu n’as plus l’application)</h2>
-<p>Écris à <a href="mailto:labasquelucas@gmail.com?subject=Suppression%20de%20mon%20compte%20TILTO">labasquelucas@gmail.com</a>
-depuis l’adresse e-mail utilisée pour te connecter (ou indique-nous ton pseudo TILTO et l’adresse de ton compte Apple / Google). Nous supprimons le compte
-sous 30 jours maximum et nous te confirmons par e-mail.</p>
-
-<h2>Ce qui est supprimé</h2>
-<ul>
-  <li>Ton compte de connexion (e-mail, identifiant Apple / Google) et, pour Apple, l’autorisation de connexion avec Apple.</li>
-  <li>Ton profil : pseudo, nom affiché, bio, ville, pays, photo et couverture.</li>
-  <li>Tes duels, tes scores, tes messages, tes amitiés, tes rivalités, tes blocages, ton niveau et tes badges.</li>
-  <li>Ta présence (dernière activité) et le jeton de notification de ton appareil.</li>
-</ul>
-
-<h2>Ce qui peut être conservé</h2>
-<ul>
-  <li>Les signalements examinés par la modération sont conservés au plus 12 mois, détachés de ton compte supprimé.</li>
-  <li>Les prestataires de paiement (Apple, Google) conservent l’historique d’achat selon leurs propres règles. La suppression du compte n’annule pas
-  un abonnement : résilie-le dans les réglages de ton App Store ou de Google Play.</li>
-</ul>
-
-<p>Pour tout autre droit (accès, rectification, portabilité, opposition) : <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a>.
-Tu peux aussi saisir la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+<header>
+  <a class="logo" href="./" aria-label="TILTO">
+    <svg viewBox="0 0 28 28" aria-hidden="true"><path d="m14 2-9 12h6l-1 8L20 9h-7l1-7Z" fill="#D7F76B" transform="translate(5 1)"/><path d="m14 2-9 12h6l-1 8L20 9h-7l1-7Z" fill="#FFFFFF" transform="translate(0 2) scale(1.05)"/></svg>
+    <span>tilto</span>
+  </a>
+  <h1>Supprimer mon compte TILTO</h1>
+</header>
+<main>
+  <section>
+    <p>Tu peux supprimer ton compte TILTO et les données associées à tout moment, de deux façons.</p>
+  </section>
+  <section>
+    <h2>1. Depuis l’application (immédiat)</h2>
+    <ol>
+      <li>Ouvre TILTO et connecte-toi.</li>
+      <li>Va dans <strong>Réglages</strong>, puis <strong>Supprimer mon compte</strong>.</li>
+      <li>Confirme. La suppression est définitive.</li>
+    </ol>
+  </section>
+  <section>
+    <h2>2. Par e-mail (si tu n’as plus l’application)</h2>
+    <p>Écris à <a href="mailto:labasquelucas@gmail.com?subject=Suppression%20de%20mon%20compte%20TILTO">labasquelucas@gmail.com</a>
+    depuis l’adresse e-mail utilisée pour te connecter (ou indique-nous ton pseudo TILTO et l’adresse de ton compte Apple / Google). Nous supprimons le compte
+    sous 30 jours maximum et nous te confirmons par e-mail.</p>
+  </section>
+  <section>
+    <h2>Ce qui est supprimé</h2>
+    <ul>
+      <li>Ton compte de connexion (e-mail, identifiant Apple / Google) et, pour Apple, l’autorisation de connexion avec Apple.</li>
+      <li>Ton profil : pseudo, nom affiché, bio, ville, pays, photo et couverture.</li>
+      <li>Tes duels, tes scores, tes messages, tes amitiés, tes rivalités, tes blocages, ton niveau et tes badges.</li>
+      <li>Ta présence (dernière activité) et le jeton de notification de ton appareil.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Ce qui peut être conservé</h2>
+    <ul>
+      <li>Les signalements examinés par la modération sont conservés au plus 12 mois, détachés de ton compte supprimé.</li>
+      <li>Les prestataires de paiement (Apple, Google) conservent l’historique d’achat selon leurs propres règles. La suppression du compte n’annule pas
+      un abonnement : résilie-le dans les réglages de ton App Store ou de Google Play.</li>
+    </ul>
+  </section>
+  <section>
+    <p>Pour tout autre droit (accès, rectification, portabilité, opposition) : <a href="mailto:labasquelucas@gmail.com">labasquelucas@gmail.com</a>.
+    Tu peux aussi saisir la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+  </section>
+</main>
+<footer>
+  TILTO – © 2026 Lucas Labasque · <a href="./">Assistance</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="cgu.html">Conditions d'utilisation</a> · <a href="../">Toutes mes applis</a>
+</footer>
 </body>
 </html>
