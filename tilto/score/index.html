@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Un score TILTO à battre. Rejoins le quiz en duel et joue les mêmes questions.">
+<meta property="og:title" content="Un score à battre sur TILTO">
+<meta property="og:description" content="7 questions. 10 secondes. À toi de jouer.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://lucas-labasque.github.io/tilto/score/cover.png">
+<title>Un score à battre — TILTO</title>
+<style>
+:root{--ink:#221b36;--muted:#6b6279;--purple:#6842e8;--lime:#d7f76b;--paper:#f7f6fb}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 80% 0,#e8e0ff 0,transparent 45%),var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,sans-serif;display:grid;place-items:center;padding:20px}.card{width:min(100%,460px);background:white;border:1px solid #e9e4f1;border-radius:30px;padding:30px;box-shadow:0 18px 55px #221b3614}.brand{font-size:24px;font-weight:900;letter-spacing:-1px;color:var(--purple)}.tag{display:inline-block;margin-top:30px;padding:6px 12px;border-radius:20px;background:var(--lime);font-size:11px;font-weight:800;letter-spacing:.08em}.topic{font-size:13px;color:var(--muted);font-weight:750;text-transform:uppercase;letter-spacing:.09em;margin-top:22px}.score{display:flex;align-items:center;justify-content:center;gap:16px;margin:8px 0 14px;font-size:72px;line-height:1;font-weight:900;letter-spacing:-5px}.dash{color:#c9c3d4;font-size:38px}.names{display:flex;justify-content:space-between;color:var(--muted);font-size:13px;font-weight:700}.message{font-size:18px;text-align:center;margin:28px 0 0;color:var(--muted)}.actions{display:grid;gap:10px;margin-top:24px}.button{display:block;width:100%;border:0;border-radius:15px;padding:15px 18px;text-align:center;text-decoration:none;font:700 16px system-ui;cursor:pointer}.primary{background:var(--purple);color:white}.secondary{background:#f0ecfa;color:var(--purple)}.stores{display:flex;justify-content:center;gap:18px;margin-top:20px;font-size:13px}.stores a{color:var(--muted)}.foot{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="brand">TILTO.</div>
+  <span class="tag" id="tag">SCORE À BATTRE</span>
+  <div class="topic" id="topic">Quiz en duel</div>
+  <div class="score"><span id="a">—</span><span class="dash">:</span><span id="b">—</span></div>
+  <div class="names"><span>MON SCORE</span><span id="opponent">ADVERSAIRE</span></div>
+  <p class="message" id="message">Tu peux faire mieux ? 7 questions, 10 secondes chacune.</p>
+  <div class="actions">
+    <a class="button primary" id="open" href="#">Jouer sur ce thème</a>
+    <button class="button secondary" id="share" type="button">Partager ce score</button>
+  </div>
+  <div class="stores"><a href="https://apps.apple.com/fr/search?term=TILTO">App Store</a><a href="https://play.google.com/store/apps/details?id=com.lucaslbsq.tilto">Google Play</a></div>
+  <p class="foot">7 questions · 10 secondes · 1 seul gagnant.</p>
+</main>
+<script>
+const q=new URLSearchParams(location.search),code=q.get('c')||'',theme=q.get('theme')||'Quiz en duel',topic=q.get('t')||'',daily=q.get('daily')==='1',a=q.get('a'),b=q.get('b'),name=q.get('n')||'ADVERSAIRE';
+document.getElementById('topic').textContent=theme;
+document.getElementById('a').textContent=a??'—';document.getElementById('b').textContent=b??'—';
+document.getElementById('opponent').textContent=name.toLocaleUpperCase('fr-FR');
+if(daily){document.getElementById('tag').textContent='DÉFI DU JOUR';document.getElementById('message').textContent='Joue la même série du jour et prends ta place au classement.'}
+const target=new URLSearchParams();if(topic)target.set('topic',topic);if(daily)target.set('daily','1');const query=target.toString();
+document.getElementById('open').textContent=daily?'Jouer le défi du jour':'Me défier sur ce thème';
+document.getElementById('open').href=code?'tilto://invite/'+encodeURIComponent(code)+(query?'?'+query:''):'https://play.google.com/store/apps/details?id=com.lucaslbsq.tilto';
+document.getElementById('share').addEventListener('click',async()=>{if(navigator.share){try{await navigator.share({title:'Un score à battre sur TILTO',url:location.href})}catch{}}else{try{await navigator.clipboard.writeText(location.href);document.getElementById('share').textContent='Lien copié'}catch{}}});
+</script>
+</body>
+</html>
